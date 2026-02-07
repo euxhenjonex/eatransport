@@ -103,7 +103,7 @@ export function Header() {
             <Link href="/contact" className="hidden sm:block">
               <Button
                 size="sm"
-                variant={isTransparent ? 'primary' : 'primary'}
+                variant="primary"
                 className="group"
               >
                 {tHero('cta')}

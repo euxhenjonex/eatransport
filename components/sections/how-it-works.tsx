@@ -67,7 +67,7 @@ export function HowItWorks() {
         {/* Steps */}
         <div className="relative">
           {/* Connecting line (desktop only) */}
-          <div className="hidden lg:block absolute top-[3.25rem] left-[12.5%] right-[12.5%] h-[2px] bg-gray-200" />
+          <div className="hidden lg:block absolute top-[3.25rem] left-[12.5%] right-[12.5%] h-[2px] bg-gradient-to-r from-gray-200 via-primary-300 to-gray-200" style={{ backgroundSize: '16px 2px', backgroundImage: 'repeating-linear-gradient(90deg, var(--primary-300) 0, var(--primary-300) 8px, transparent 8px, transparent 16px)' }} />
 
           <AnimatedContainer
             as="div"
@@ -75,17 +75,17 @@ export function HowItWorks() {
             staggerDelay={0.15}
           >
             {STEPS.map((step, index) => (
-              <div key={step.key} className="relative text-center">
+              <div key={step.key} className="relative text-center group">
                 {/* Step circle with number badge */}
                 <motion.div
                   className="relative inline-flex mb-6"
                   variants={popIn}
                 >
-                  <div className="w-[6.5rem] h-[6.5rem] rounded-full bg-gray-900 text-white flex items-center justify-center relative z-10">
+                  <div className="w-24 h-24 rounded-full bg-gray-900 text-white flex items-center justify-center relative z-10 ring-4 ring-gray-900/10">
                     {step.icon}
                   </div>
                   {/* Number badge */}
-                  <div className="absolute -top-1 -right-1 w-8 h-8 bg-secondary-500 rounded-full text-white text-sm font-bold flex items-center justify-center z-20 shadow-md">
+                  <div className="absolute -top-1 -right-1 w-8 h-8 bg-secondary-500 rounded-full text-white text-sm font-bold flex items-center justify-center z-20 shadow-md transition-transform duration-300 group-hover:scale-110">
                     {index + 1}
                   </div>
                 </motion.div>

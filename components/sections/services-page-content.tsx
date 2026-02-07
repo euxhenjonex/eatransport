@@ -18,19 +18,14 @@ const SERVICES = [
     featureKeys: ['freight.f1', 'freight.f2', 'freight.f3', 'freight.f4'],
   },
   {
-    key: 'express',
+    key: 'frigo',
     image: 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=1470&auto=format&fit=crop',
-    featureKeys: ['express.f1', 'express.f2', 'express.f3', 'express.f4'],
+    featureKeys: ['frigo.f1', 'frigo.f2', 'frigo.f3', 'frigo.f4'],
   },
   {
-    key: 'logistics',
+    key: 'express',
     image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1470&auto=format&fit=crop',
-    featureKeys: ['logistics.f1', 'logistics.f2', 'logistics.f3', 'logistics.f4'],
-  },
-  {
-    key: 'customs',
-    image: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1471&auto=format&fit=crop',
-    featureKeys: ['customs.f1', 'customs.f2', 'customs.f3', 'customs.f4'],
+    featureKeys: ['express.f1', 'express.f2', 'express.f3', 'express.f4'],
   },
 ] as const;
 
@@ -42,12 +37,10 @@ interface ServicesPageContentProps {
     subtitle: string;
     freightTitle: string;
     freightDescription: string;
+    frigoTitle: string;
+    frigoDescription: string;
     expressTitle: string;
     expressDescription: string;
-    logisticsTitle: string;
-    logisticsDescription: string;
-    customsTitle: string;
-    customsDescription: string;
     requestQuote: string;
     heroCta: string;
     features: Record<string, string>;

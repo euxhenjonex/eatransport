@@ -67,6 +67,23 @@ export function AboutSection() {
                   </p>
                 </div>
               </motion.div>
+
+              {/* Feature 3 - Light card */}
+              <motion.div variants={fadeUp} className="bg-white rounded-2xl p-6 flex items-start gap-4 border border-gray-100 shadow-sm">
+                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">
+                    {t('values.professionalism.title')}
+                  </h3>
+                  <p className="text-gray-500 text-sm">
+                    {t('values.professionalism.description')}
+                  </p>
+                </div>
+              </motion.div>
             </AnimatedContainer>
 
             <Link href="/about">
@@ -101,6 +118,12 @@ export function AboutSection() {
               />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent" />
+
+              {/* Experience badge */}
+              <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-3 shadow-lg">
+                <div className="text-2xl font-bold text-gray-900 leading-none">8+</div>
+                <div className="text-xs text-gray-500 mt-1">{t('values.reliability.title')}</div>
+              </div>
             </div>
 
           </AnimatedSection>

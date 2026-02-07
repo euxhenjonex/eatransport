@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 203.55 141.6"><g fill-rule="nonzero"><path fill="#ED2939" d="M203.55 11.19v119.22c0 6.16-5.04 11.19-11.19 11.19H11.19C5.05 141.6.02 136.59 0 130.45V11.15C.02 5.01 5.05 0 11.19 0h181.17c6.15 0 11.19 5.03 11.19 11.19z"/><path fill="#FAE042" d="M135.7 0v141.6H11.19C5.05 141.6.02 136.59 0 130.45V11.15C.02 5.01 5.05 0 11.19 0H135.7z"/><path d="M67.85 0v141.6H11.19C5.05 141.6.02 136.59 0 130.45V11.15C.02 5.01 5.05 0 11.19 0h56.66z"/></g></svg>
+<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g clip-path="url(#BE_svg__a)">
+        <path
+            d="M16.174.747A11.974 11.974 0 0 0 12 0a11.96 11.96 0 0 0-4.174.747L6.782 12l1.044 11.254c1.3.482 2.706.746 4.174.746a11.99 11.99 0 0 0 4.174-.746L17.216 12 16.174.747Z"
+            fill="#FFDA44"
+        />
+        <path d="M24 12c0-5.16-3.257-9.56-7.826-11.255v22.507C20.744 21.557 24 17.159 24 11.999Z"
+            fill="#D80027" />
+        <path d="M0 12c0 5.16 3.256 9.558 7.826 11.254V.746C3.256 2.442 0 6.84 0 12Z" fill="#000" />
+    </g>
+    <defs>
+        <clipPath id="BE_svg__a">
+            <path fill="#fff" d="M0 0h24v24H0z" />
+        </clipPath>
+    </defs>
+</svg>

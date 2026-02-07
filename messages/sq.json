@@ -39,32 +39,24 @@
       "description": "Transport i sigurt i mallrave nga Shqipëria në të gjithë Europën.",
       "f1": "Mbulim Shqipëri-Europë",
       "f2": "Ngarkesa të plota dhe të pjesshme",
-      "f3": "Monitorim temperature",
+      "f3": "Dokumentacion i plotë",
       "f4": "Gjurmim në kohë reale"
     },
+    "frigo": {
+      "title": "Transport me Frigo",
+      "description": "Transport i specializuar me temperaturë të kontrolluar për mallra që kërkojnë ruajtje në kushte të ftohta.",
+      "f1": "Kontroll temperature 24/7",
+      "f2": "Zinxhir i ftohtë i garantuar",
+      "f3": "Mallra ushqimore dhe farmaceutike",
+      "f4": "Monitorim në kohë reale"
+    },
     "express": {
-      "title": "Dërgesa Express",
-      "description": "Shërbim i shpejtë për dërgesa urgjente.",
+      "title": "Transport Furgon Express",
+      "description": "Shërbim i shpejtë me furgon për dërgesa urgjente dhe ngarkesa të vogla.",
       "f1": "Dërgesë 24-48 orë",
       "f2": "Përparësi në trajtim",
       "f3": "Rrugë direkte",
-      "f4": "Mjete të dedikuara"
-    },
-    "logistics": {
-      "title": "Zgjidhje Logjistike",
-      "description": "Menaxhim i plotë i zinxhirit të furnizimit.",
-      "f1": "Menaxhim magazinimi",
-      "f2": "Kontroll inventari",
-      "f3": "Rrjete shpërndarje",
-      "f4": "Optimizim zinxhiri furnizimi"
-    },
-    "customs": {
-      "title": "Shërbime Doganore",
-      "description": "Ndihmë për procedurat doganore dhe dokumentacionin.",
-      "f1": "Dokumentacion import/eksport",
-      "f2": "Zhdoganim",
-      "f3": "Llogaritje taksash",
-      "f4": "Mbështetje për pajtueshmëri"
+      "f4": "Ideal për ngarkesa të vogla"
     },
     "request_quote": "Kërko Preventiv"
   },
@@ -175,16 +167,18 @@
     "stay_updated": "Qëndro i Përditësuar",
     "newsletter_description": "Merr lajmet dhe përditësimet më të fundit për shërbimet tona.",
     "email_placeholder": "Vendos email-in tënd",
+    "hours_weekdays": "E Hënë - E Premte: 08:00 - 17:00",
+    "hours_weekend": "E Shtunë & E Diel: Mbyllur",
     "privacy_policy": "Politika e Privatësisë",
     "terms_of_service": "Kushtet e Shërbimit"
   },
   "stats": {
     "badge": "EA Transport në Numra",
-    "years_value": "15+",
+    "years_value": "8+",
     "years_label": "Vite Përvojë",
     "countries_value": "30+",
     "countries_label": "Vende të Mbuluara",
-    "fleet_value": "50+",
+    "fleet_value": "15",
     "fleet_label": "Mjete Transporti",
     "clients_value": "500+",
     "clients_label": "Klientë të Kënaqur"
@@ -231,12 +225,12 @@
       "italy": "Itali",
       "germany": "Gjermani",
       "austria": "Austri",
-      "greece": "Greqi",
       "switzerland": "Zvicër",
       "france": "Francë",
       "netherlands": "Holandë",
       "belgium": "Belgjikë",
-      "spain": "Spanjë"
+      "spain": "Spanjë",
+      "portugal": "Portugali"
     }
   },
   "testimonials": {

@@ -13,18 +13,15 @@ import { slideLeft, slideRight, fadeUp } from '@/lib/animations';
 
 const DESTINATIONS = [
   { key: 'italy', flag: '/flag/italy-flag-icon.svg', days: '1-2' },
-  { key: 'greece', flag: '/flag/greece-flag-icon.svg', days: '1' },
-  { key: 'spain', flag: '/flag/spain-country-flag-icon.svg', days: '3-4' },
+  { key: 'spain', flag: '/flag/spain-country-flag-icon.svg', days: '2-3' },
   { key: 'austria', flag: '/flag/austria-flag-icon.svg', days: '2-3' },
-  { key: 'germany', flag: '/flag/germany-flag-icon.svg', days: '3-4' },
-  { key: 'switzerland', flag: '/flag/switzerland-flag-icon.svg', days: '3-4' },
-  { key: 'france', flag: '/flag/france-flag-icon.svg', days: '3-4' },
-  { key: 'belgium', flag: '/flag/belgium-flag-icon.svg', days: '4-5' },
-  { key: 'netherlands', flag: '/flag/netherlands-flag-icon.svg', days: '4-5' },
+  { key: 'germany', flag: '/flag/germany-flag-icon.svg', days: '2-4' },
+  { key: 'switzerland', flag: '/flag/switzerland-flag-icon.svg', days: '2-3' },
+  { key: 'france', flag: '/flag/france-flag-icon.svg', days: '2-3' },
+  { key: 'belgium', flag: '/flag/belgium-flag-icon.svg', days: '3-4' },
+  { key: 'netherlands', flag: '/flag/netherlands-flag-icon.svg', days: '3-4' },
+  { key: 'portugal', flag: '/flag/portugal-flag-icon.svg', days: '4-5' },
 ];
-
-// Highlighted routes shown on the left content side
-const HIGHLIGHTED_ROUTES = DESTINATIONS.slice(0, 4);
 
 export function RouteCoverage() {
   const t = useTranslations('routes');
@@ -46,39 +43,6 @@ export function RouteCoverage() {
             <p className="text-lg text-gray-500 mb-10 leading-relaxed">
               {t('subtitle')}
             </p>
-
-            {/* Highlighted route cards */}
-            <AnimatedContainer
-              as="div"
-              className="grid grid-cols-2 gap-3 mb-10"
-              staggerDelay={0.08}
-            >
-              {HIGHLIGHTED_ROUTES.map((route) => (
-                <motion.div
-                  key={route.key}
-                  variants={fadeUp}
-                  className="bg-white rounded-2xl p-4 border border-gray-100 hover:border-primary-200 hover:shadow-sm transition-all"
-                >
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={route.flag}
-                      alt={route.key}
-                      width={32}
-                      height={32}
-                      className="rounded-sm"
-                    />
-                    <div>
-                      <div className="font-semibold text-gray-900 text-sm">
-                        {t(`countries.${route.key}`)}
-                      </div>
-                      <div className="text-xs text-gray-400">
-                        {route.days} {t('delivery_days')}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </AnimatedContainer>
 
             <Link href="/contact">
               <Button variant="dark" size="lg" className="group">
@@ -105,10 +69,10 @@ export function RouteCoverage() {
             <div className="bg-white rounded-3xl p-8 md:p-10 border border-gray-100 shadow-sm">
               {/* Hub - Albania */}
               <div className="text-center mb-8">
-                <div className="w-20 h-20 bg-gray-900 rounded-full mx-auto flex items-center justify-center text-white mb-3 shadow-lg">
+                <div className="w-20 h-20 bg-gray-900 rounded-full mx-auto flex items-center justify-center text-white mb-3 shadow-lg ring-4 ring-primary-500/20 animate-pulse-slow">
                   <Image
                     src="/flag/albania-flag-icon.svg"
-                    alt="Albania"
+                    alt="Flag of Albania"
                     width={40}
                     height={40}
                     className="rounded-sm"
@@ -135,11 +99,11 @@ export function RouteCoverage() {
                   <motion.div
                     key={dest.key}
                     variants={fadeUp}
-                    className="text-center p-3 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group/dest cursor-default"
+                    className="text-center p-3 bg-gray-50 rounded-xl hover:bg-primary-50 transition-all duration-200 group/dest cursor-default hover:scale-105 hover:shadow-md"
                   >
                     <Image
                       src={dest.flag}
-                      alt={dest.key}
+                      alt={`Flag of ${dest.key}`}
                       width={28}
                       height={28}
                       className="rounded-sm mx-auto mb-1"
@@ -147,7 +111,7 @@ export function RouteCoverage() {
                     <div className="text-xs font-medium text-gray-700 group-hover/dest:text-primary-700 transition-colors">
                       {t(`countries.${dest.key}`)}
                     </div>
-                    <div className="text-[10px] text-gray-400 mt-0.5">
+                    <div className="inline-block mt-1 px-2 py-0.5 bg-primary-100 text-primary-700 text-[10px] font-medium rounded-full">
                       {dest.days} {t('delivery_days')}
                     </div>
                   </motion.div>

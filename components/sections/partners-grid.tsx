@@ -23,12 +23,12 @@ function PartnerLogo({ name, initials }: { name: string; initials: string }) {
     <div className="flex-shrink-0 group">
       <div className="w-36 h-16 mx-6 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 grayscale hover:grayscale-0 transition-all duration-300 hover:border-primary-200 hover:shadow-md hover:scale-105">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-gray-200 group-hover:bg-primary-100 rounded-lg flex items-center justify-center transition-colors">
-            <span className="text-xs font-bold text-gray-500 group-hover:text-primary-600 transition-colors">
+          <div className="w-8 h-8 bg-gray-300 group-hover:bg-primary-100 rounded-lg flex items-center justify-center transition-colors">
+            <span className="text-xs font-bold text-gray-600 group-hover:text-primary-600 transition-colors">
               {initials}
             </span>
           </div>
-          <span className="text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors">
+          <span className="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">
             {name}
           </span>
         </div>

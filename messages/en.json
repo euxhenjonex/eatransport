@@ -39,32 +39,24 @@
       "description": "Safe transport of goods from Albania throughout Europe.",
       "f1": "Albania to Europe coverage",
       "f2": "Full and partial loads",
-      "f3": "Temperature monitoring",
+      "f3": "Complete documentation",
       "f4": "Real-time tracking"
     },
+    "frigo": {
+      "title": "Refrigerated Transport",
+      "description": "Specialized temperature-controlled transport for goods requiring cold chain preservation.",
+      "f1": "24/7 temperature control",
+      "f2": "Guaranteed cold chain",
+      "f3": "Food and pharmaceutical goods",
+      "f4": "Real-time monitoring"
+    },
     "express": {
-      "title": "Express Delivery",
-      "description": "Fast service for urgent shipments.",
+      "title": "Express Van Transport",
+      "description": "Fast van service for urgent shipments and smaller loads.",
       "f1": "24-48 hour delivery",
       "f2": "Priority handling",
       "f3": "Direct routes",
-      "f4": "Dedicated vehicles"
-    },
-    "logistics": {
-      "title": "Logistics Solutions",
-      "description": "Complete supply chain management.",
-      "f1": "Warehouse management",
-      "f2": "Inventory control",
-      "f3": "Distribution networks",
-      "f4": "Supply chain optimization"
-    },
-    "customs": {
-      "title": "Customs Services",
-      "description": "Assistance with customs procedures and documentation.",
-      "f1": "Import/Export documentation",
-      "f2": "Customs clearance",
-      "f3": "Duty calculation",
-      "f4": "Compliance support"
+      "f4": "Ideal for smaller loads"
     },
     "request_quote": "Request Quote"
   },
@@ -175,16 +167,18 @@
     "stay_updated": "Stay Updated",
     "newsletter_description": "Get the latest news and updates about our services.",
     "email_placeholder": "Enter your email",
+    "hours_weekdays": "Mon - Fri: 08:00 - 17:00",
+    "hours_weekend": "Sat & Sun: Closed",
     "privacy_policy": "Privacy Policy",
     "terms_of_service": "Terms of Service"
   },
   "stats": {
     "badge": "EA Transport in Numbers",
-    "years_value": "15+",
+    "years_value": "8+",
     "years_label": "Years of Experience",
     "countries_value": "30+",
     "countries_label": "Countries Covered",
-    "fleet_value": "50+",
+    "fleet_value": "15",
     "fleet_label": "Fleet Vehicles",
     "clients_value": "500+",
     "clients_label": "Satisfied Clients"
@@ -231,7 +225,7 @@
       "italy": "Italy",
       "germany": "Germany",
       "austria": "Austria",
-      "greece": "Greece",
+      "portugal": "Portugal",
       "switzerland": "Switzerland",
       "france": "France",
       "netherlands": "Netherlands",

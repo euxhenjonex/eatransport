@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Container } from '@/components/ui/container';
 import { Badge } from '@/components/ui/badge';
 import { QuickQuoteForm } from '@/components/forms/quick-quote-form';
-import { MapSection } from '@/components/sections/map-section';
 import { AnimatedSection } from '@/components/animation/animated-section';
 import { slideLeft, slideRight } from '@/lib/animations';
 
@@ -40,10 +39,6 @@ export function HomepageQuoteSection() {
               </div>
             </div>
 
-            {/* Map section - hidden on mobile for performance */}
-            <div className="hidden lg:block rounded-3xl overflow-hidden">
-              <MapSection />
-            </div>
           </AnimatedSection>
 
           {/* Right column: Form (on mobile, appears first for conversion) */}

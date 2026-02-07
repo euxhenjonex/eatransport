@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import Image from 'next/image';
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
 import { HeroAnimation, HeroStaggerItem } from '@/components/animation/hero-animation';
@@ -43,19 +42,23 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <Image
-          src="/ea_transport_hero.webp"
-          alt="Truck on highway"
-          fill
-          className="object-cover object-[70%_center] md:object-center"
-          priority
-          quality={90}
-        />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-gray-900/40" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/ea_transport_hero.webp"
+          className="absolute inset-0 w-full h-full object-cover object-[70%_center] md:object-center"
+        >
+          <source src="/video1.webm" type="video/webm" />
+          <source src="/video1.mp4" type="video/mp4" />
+        </video>
+        {/* Gradient overlay — layered for depth */}
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/75 to-gray-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-gray-900/50" />
       </div>
 
       {/* Decorative elements */}
@@ -68,21 +71,21 @@ export function Hero() {
             {/* Content */}
             <HeroAnimation className="max-w-2xl">
               <HeroStaggerItem>
-                <h1 className="text-4xl md:text-5xl lg:text-[clamp(3rem,6vh,4.5rem)] font-bold text-white mb-4 leading-[1.1]">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[clamp(3rem,6vh,4.5rem)] font-bold text-white mb-4 leading-[1.1]">
                   {t('title')}
                 </h1>
               </HeroStaggerItem>
 
               <HeroStaggerItem>
-                <p className="text-lg md:text-xl text-gray-300 mb-6 leading-relaxed">
+                <p className="text-lg md:text-xl text-gray-300 mb-5 leading-relaxed">
                   {t('description')}
                 </p>
               </HeroStaggerItem>
 
               <HeroStaggerItem>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-row gap-3">
                   <Link href="/contact">
-                    <Button size="lg" className="group">
+                    <Button size="md" className="group border-2 border-transparent">
                       {t('cta')}
                       <svg
                         className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1"
@@ -100,7 +103,7 @@ export function Hero() {
                     </Button>
                   </Link>
                   <Link href="/services">
-                    <Button variant="outline-light" size="lg" className="group">
+                    <Button variant="outline-light" size="md" className="group">
                       {t('secondary_cta')}
                       <svg
                         className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1"
@@ -122,26 +125,28 @@ export function Hero() {
 
               {/* Trust bar */}
               <HeroStaggerItem>
-                <div className="mt-10 pt-8 border-t border-white/15">
-                  <div className="flex flex-wrap items-center gap-8 md:gap-10">
-                    {TRUST_STATS.map((stat) => (
-                      <div
-                        key={stat.valueKey}
-                        className="flex items-center gap-3"
-                      >
-                        <div className="w-10 h-10 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-primary-200 shrink-0">
-                          {stat.icon}
-                        </div>
-                        <div>
-                          <div className="text-xl font-bold text-white leading-none tracking-tight">
-                            {tStats(stat.valueKey)}
+                <div className="mt-8 md:mt-10 pt-6 md:pt-8 border-t border-white/15">
+                  <div className="bg-white/[0.07] backdrop-blur-md border border-white/10 rounded-2xl px-5 py-4 md:px-6">
+                    <div className="grid grid-cols-3 divide-x divide-white/10">
+                      {TRUST_STATS.map((stat) => (
+                        <div
+                          key={stat.valueKey}
+                          className="flex items-center gap-2.5 md:gap-3 px-2 first:pl-0 last:pr-0 md:px-4 md:first:pl-0 md:last:pr-0"
+                        >
+                          <div className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-primary-200 shrink-0 [&_svg]:w-4 [&_svg]:h-4 md:[&_svg]:w-5 md:[&_svg]:h-5">
+                            {stat.icon}
                           </div>
-                          <div className="text-[13px] text-gray-400 mt-0.5">
-                            {tStats(stat.labelKey)}
+                          <div className="min-w-0">
+                            <div className="text-base md:text-xl font-bold text-white leading-none tracking-tight">
+                              {tStats(stat.valueKey)}
+                            </div>
+                            <div className="text-[11px] md:text-[13px] text-gray-400 mt-0.5 truncate">
+                              {tStats(stat.labelKey)}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
               </HeroStaggerItem>
@@ -151,6 +156,13 @@ export function Hero() {
         </div>
       </Container>
 
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 animate-bounce-slow">
+        <span className="text-white/50 text-xs tracking-widest uppercase">Scroll</span>
+        <svg className="w-5 h-5 text-white/50" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7" />
+        </svg>
+      </div>
     </section>
   );
 }

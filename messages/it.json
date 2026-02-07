@@ -39,32 +39,24 @@
       "description": "Trasporto sicuro di merci dall'Albania in tutta Europa.",
       "f1": "Copertura Albania-Europa",
       "f2": "Carichi completi e parziali",
-      "f3": "Monitoraggio temperatura",
+      "f3": "Documentazione completa",
       "f4": "Tracciamento in tempo reale"
     },
+    "frigo": {
+      "title": "Trasporto Refrigerato",
+      "description": "Trasporto specializzato a temperatura controllata per merci che richiedono la catena del freddo.",
+      "f1": "Controllo temperatura 24/7",
+      "f2": "Catena del freddo garantita",
+      "f3": "Merci alimentari e farmaceutiche",
+      "f4": "Monitoraggio in tempo reale"
+    },
     "express": {
-      "title": "Consegna Express",
-      "description": "Servizio rapido per spedizioni urgenti.",
+      "title": "Trasporto Furgone Express",
+      "description": "Servizio rapido con furgone per spedizioni urgenti e carichi piccoli.",
       "f1": "Consegna 24-48 ore",
       "f2": "Gestione prioritaria",
       "f3": "Rotte dirette",
-      "f4": "Veicoli dedicati"
-    },
-    "logistics": {
-      "title": "Soluzioni Logistiche",
-      "description": "Gestione completa della catena di fornitura.",
-      "f1": "Gestione magazzino",
-      "f2": "Controllo inventario",
-      "f3": "Reti di distribuzione",
-      "f4": "Ottimizzazione catena di fornitura"
-    },
-    "customs": {
-      "title": "Servizi Doganali",
-      "description": "Assistenza per procedure doganali e documentazione.",
-      "f1": "Documentazione import/export",
-      "f2": "Sdoganamento",
-      "f3": "Calcolo dazi",
-      "f4": "Supporto conformità"
+      "f4": "Ideale per carichi piccoli"
     },
     "request_quote": "Richiedi Preventivo"
   },
@@ -175,16 +167,18 @@
     "stay_updated": "Resta Aggiornato",
     "newsletter_description": "Ricevi le ultime notizie e aggiornamenti sui nostri servizi.",
     "email_placeholder": "Inserisci la tua email",
+    "hours_weekdays": "Lun - Ven: 08:00 - 17:00",
+    "hours_weekend": "Sab & Dom: Chiuso",
     "privacy_policy": "Privacy Policy",
     "terms_of_service": "Termini di Servizio"
   },
   "stats": {
     "badge": "EA Transport in Numeri",
-    "years_value": "15+",
+    "years_value": "8+",
     "years_label": "Anni di Esperienza",
     "countries_value": "30+",
     "countries_label": "Paesi Coperti",
-    "fleet_value": "50+",
+    "fleet_value": "15",
     "fleet_label": "Veicoli nella Flotta",
     "clients_value": "500+",
     "clients_label": "Clienti Soddisfatti"
@@ -231,7 +225,7 @@
       "italy": "Italia",
       "germany": "Germania",
       "austria": "Austria",
-      "greece": "Grecia",
+      "portugal": "Portogallo",
       "switzerland": "Svizzera",
       "france": "Francia",
       "netherlands": "Paesi Bassi",

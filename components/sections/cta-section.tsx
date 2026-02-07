@@ -2,11 +2,9 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import Image from 'next/image';
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
 import { AnimatedSection } from '@/components/animation/animated-section';
-import { scaleUp } from '@/lib/animations';
 
 export function CtaSection() {
   const t = useTranslations('hero');
@@ -17,16 +15,9 @@ export function CtaSection() {
     <section className="py-20 md:py-28 bg-gray-50">
       <Container>
         <AnimatedSection animation="scale-up" className="relative bg-gray-900 rounded-[2rem] overflow-hidden">
-          {/* Background image */}
-          <div className="absolute inset-0">
-            <Image
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
-              alt="City skyline"
-              fill
-              className="object-cover opacity-30"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-gray-900/90" />
-          </div>
+          {/* Background pattern */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
+          <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
 
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
@@ -95,24 +86,24 @@ export function CtaSection() {
               </div>
 
               {/* Trust badges */}
-              <div className="flex flex-wrap items-center justify-center gap-6 mt-12 pt-8 border-t border-white/10">
-                <div className="flex items-center gap-2 text-gray-400">
-                  <svg className="w-5 h-5 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-12 pt-8 border-t border-white/10">
+                <div className="flex items-center gap-2.5 bg-white/[0.06] rounded-full px-4 py-2">
+                  <svg className="w-4.5 h-4.5 text-primary-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
-                  <span className="text-sm">{tCta('free_quote')}</span>
+                  <span className="text-sm text-gray-300">{tCta('free_quote')}</span>
                 </div>
-                <div className="flex items-center gap-2 text-gray-400">
-                  <svg className="w-5 h-5 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                <div className="flex items-center gap-2.5 bg-white/[0.06] rounded-full px-4 py-2">
+                  <svg className="w-4.5 h-4.5 text-primary-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-sm">{tCta('support_24_7')}</span>
+                  <span className="text-sm text-gray-300">{tCta('support_24_7')}</span>
                 </div>
-                <div className="flex items-center gap-2 text-gray-400">
-                  <svg className="w-5 h-5 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                <div className="flex items-center gap-2.5 bg-white/[0.06] rounded-full px-4 py-2">
+                  <svg className="w-4.5 h-4.5 text-primary-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
-                  <span className="text-sm">{tCta('insured')}</span>
+                  <span className="text-sm text-gray-300">{tCta('insured')}</span>
                 </div>
               </div>
             </div>

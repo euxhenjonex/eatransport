@@ -7,10 +7,10 @@ export const NAV_LINKS = [
 
 export const COMPANY_INFO = {
   name: 'EA Transport',
-  email: 'info@eatransport.al',
-  phone: '+355 69 123 4567',
+  email: 'info@transport-ea.com',
+  phone: '+355 69 402 2231',
   address: 'Vllazërimi, Fllakë, Durrës 2001, Albania',
-  whatsapp: '+355691234567',
+  whatsapp: '+355694022231',
 } as const;
 
 export const SOCIAL_LINKS = {

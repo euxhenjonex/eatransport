@@ -12,8 +12,8 @@ export function MapSection() {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
   const center = useMemo(() => ({
-    lat: 41.355285,
-    lng: 19.509263,
+    lat: 41.35563292490316,
+    lng: 19.50868594874848,
   }), []);
 
   const { isLoaded, loadError } = useLoadScript({

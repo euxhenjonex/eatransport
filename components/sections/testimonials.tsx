@@ -45,10 +45,10 @@ export function Testimonials() {
             <motion.div
               key={reviewKey}
               variants={slideUpVariants}
-              className="relative bg-gray-50 rounded-3xl p-8 hover:shadow-md transition-shadow"
+              className="relative bg-gray-50 rounded-3xl p-8 hover:shadow-md transition-shadow border-l-4 border-primary-500/30"
             >
               {/* Decorative quote mark */}
-              <div className="absolute top-5 right-7 text-6xl font-serif text-primary-100 leading-none select-none pointer-events-none">
+              <div className="absolute top-5 right-7 text-5xl font-serif text-primary-200/60 leading-none select-none pointer-events-none">
                 &ldquo;
               </div>
 
@@ -66,7 +66,7 @@ export function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-3 pt-5 border-t border-gray-200">
-                <div className="w-11 h-11 bg-gray-900 rounded-full flex items-center justify-center text-white text-sm font-semibold shrink-0">
+                <div className="w-11 h-11 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full flex items-center justify-center text-white text-sm font-semibold shrink-0">
                   {t(`reviews.${reviewKey}.initials`)}
                 </div>
                 <div>

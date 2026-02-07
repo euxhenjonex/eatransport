@@ -15,7 +15,7 @@ export function Footer() {
       {/* Main footer content */}
       <Container>
         <div className="py-16 md:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8">
             {/* Brand section */}
             <div className="lg:col-span-1">
               <div className="mb-6">
@@ -126,34 +126,18 @@ export function Footer() {
                     {COMPANY_INFO.phone}
                   </a>
                 </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="text-gray-400 text-sm leading-relaxed">
+                    <p>{t('hours_weekdays')}</p>
+                    <p>{t('hours_weekend')}</p>
+                  </div>
+                </li>
               </ul>
-            </div>
-
-            {/* Newsletter / CTA */}
-            <div>
-              <h4 className="text-white font-semibold text-lg mb-6">{t('stay_updated')}</h4>
-              <p className="text-gray-400 text-sm mb-6">
-                {t('newsletter_description')}
-              </p>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  id="footer-newsletter-email"
-                  name="email"
-                  autoComplete="email"
-                  placeholder={t('email_placeholder')}
-                  className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-colors text-sm"
-                />
-                <button
-                  type="submit"
-                  aria-label={t('stay_updated')}
-                  className="px-4 py-3 bg-primary-500 text-white rounded-xl hover:bg-primary-600 active:scale-95 transition-all duration-200"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </button>
-              </div>
             </div>
           </div>
         </div>
