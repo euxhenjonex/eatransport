@@ -66,7 +66,7 @@ export function Hero() {
       <div className="absolute bottom-20 left-10 w-64 h-64 bg-primary-500/5 rounded-full blur-2xl" />
 
       <Container className="relative z-10">
-        <div className="pt-24 pb-12 md:pt-28 md:pb-16">
+        <div className="pt-16 pb-12 md:pt-28 md:pb-16">
           <div className="flex justify-start">
             {/* Content */}
             <HeroAnimation className="max-w-2xl">
@@ -85,10 +85,10 @@ export function Hero() {
               <HeroStaggerItem>
                 <div className="flex flex-row gap-3">
                   <Link href="/contact">
-                    <Button size="md" className="group border-2 border-transparent">
+                    <Button size="sm" className="group border-2 border-transparent md:px-5 md:py-2.5 md:text-base">
                       {t('cta')}
                       <svg
-                        className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1"
+                        className="w-4 h-4 ml-1.5 md:w-5 md:h-5 md:ml-2 transition-transform group-hover:translate-x-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -103,10 +103,10 @@ export function Hero() {
                     </Button>
                   </Link>
                   <Link href="/services">
-                    <Button variant="outline-light" size="md" className="group">
+                    <Button variant="outline-light" size="sm" className="group md:px-5 md:py-2.5 md:text-base">
                       {t('secondary_cta')}
                       <svg
-                        className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1"
+                        className="w-4 h-4 ml-1.5 md:w-5 md:h-5 md:ml-2 transition-transform group-hover:translate-x-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -133,14 +133,14 @@ export function Hero() {
                           key={stat.valueKey}
                           className="flex items-center gap-2.5 md:gap-3 px-2 first:pl-0 last:pr-0 md:px-4 md:first:pl-0 md:last:pr-0"
                         >
-                          <div className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-primary-200 shrink-0 [&_svg]:w-4 [&_svg]:h-4 md:[&_svg]:w-5 md:[&_svg]:h-5">
+                          <div className="hidden md:flex w-11 h-11 rounded-full bg-white/10 border border-white/15 items-center justify-center text-primary-200 shrink-0 [&_svg]:w-5 [&_svg]:h-5">
                             {stat.icon}
                           </div>
                           <div className="min-w-0">
                             <div className="text-base md:text-xl font-bold text-white leading-none tracking-tight">
                               {tStats(stat.valueKey)}
                             </div>
-                            <div className="text-[11px] md:text-[13px] text-gray-400 mt-0.5 truncate">
+                            <div className="text-[10px] md:text-[13px] text-gray-400 mt-0.5 leading-tight">
                               {tStats(stat.labelKey)}
                             </div>
                           </div>
