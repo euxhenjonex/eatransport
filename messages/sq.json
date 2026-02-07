@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "title": "EA Transport - Transport Ndërkombëtar i Mallrave",
+    "description": "Transport ndërkombëtar i mallrave nga Shqipëria në Europë. Shërbime transporti të sigurt dhe të shpejtë.",
+    "services_description": "Shërbime profesionale transporti mallrash: transport ndërkombëtar, dërgesa express, zgjidhje logjistike dhe shërbime doganore. Kërko preventiv falas!",
+    "about_description": "EA Transport - kompani transporti ndërkombëtar me 15+ vite përvojë. Lidhim Shqipërinë me Europën me shërbime të besueshme transporti.",
+    "contact_description": "Na kontaktoni për transport mallrash ndërkombëtar. Kërko preventiv falas online ose telefononi. Mbulim në 30+ vende europiane."
+  },
+  "nav": {
+    "home": "Kryefaqja",
+    "services": "Shërbimet",
+    "about": "Rreth Nesh",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Partneri Juaj Global i Logjistikës",
+    "title": "Transport Ndërkombëtar i Mallrave",
+    "subtitle": "Lidhim Shqipërinë me Europën",
+    "description": "Zgjidhje profesionale transporti për biznesin tuaj. Dërgesa të sigurta dhe në kohë në të gjithë Europën.",
+    "cta": "Kërko Preventiv",
+    "secondary_cta": "Shërbimet Tona",
+    "stats": {
+      "clients_label": "Klientë të Kënaqur",
+      "shipments_label": "Dërgesa të Kryera",
+      "years_label": "Vite Përvojë",
+      "on_time_label": "Dërgesa në Kohë",
+      "countries_label": "30+ Vende"
+    }
+  },
+  "services": {
+    "badge": "Shërbimet Tona",
+    "title": "Zgjidhje Gjithëpërfshirëse Logjistike",
+    "subtitle": "Nga transporti i mallrave deri te dërgesa express, ne ofrojmë zgjidhje logjistike të plota të përshtatura për nevojat e biznesit tuaj.",
+    "services_count": "Shërbime",
+    "years_experience": "Vite Përvojë",
+    "coverage": "Mbulim",
+    "freight": {
+      "title": "Transport Mallrash",
+      "description": "Transport i sigurt i mallrave nga Shqipëria në të gjithë Europën.",
+      "f1": "Mbulim Shqipëri-Europë",
+      "f2": "Ngarkesa të plota dhe të pjesshme",
+      "f3": "Monitorim temperature",
+      "f4": "Gjurmim në kohë reale"
+    },
+    "express": {
+      "title": "Dërgesa Express",
+      "description": "Shërbim i shpejtë për dërgesa urgjente.",
+      "f1": "Dërgesë 24-48 orë",
+      "f2": "Përparësi në trajtim",
+      "f3": "Rrugë direkte",
+      "f4": "Mjete të dedikuara"
+    },
+    "logistics": {
+      "title": "Zgjidhje Logjistike",
+      "description": "Menaxhim i plotë i zinxhirit të furnizimit.",
+      "f1": "Menaxhim magazinimi",
+      "f2": "Kontroll inventari",
+      "f3": "Rrjete shpërndarje",
+      "f4": "Optimizim zinxhiri furnizimi"
+    },
+    "customs": {
+      "title": "Shërbime Doganore",
+      "description": "Ndihmë për procedurat doganore dhe dokumentacionin.",
+      "f1": "Dokumentacion import/eksport",
+      "f2": "Zhdoganim",
+      "f3": "Llogaritje taksash",
+      "f4": "Mbështetje për pajtueshmëri"
+    },
+    "request_quote": "Kërko Preventiv"
+  },
+  "about": {
+    "title": "Rreth Nesh",
+    "subtitle": "Historia Jonë",
+    "description": "EA Transport është një kompani transporti ndërkombëtar me seli në Shqipëri. Me vite përvojë në industri, ne ofrojmë shërbime transporti të besueshme dhe profesionale.",
+    "story_title": "Ndërtimi i Besimit Përmes Shërbimit të Besueshëm",
+    "story_p1": "EA Transport u themelua me një mision të thjeshtë: të ofrojë shërbime transporti të besueshme, efikase dhe profesionale që lidhin Shqipërinë me Evropën.",
+    "story_p2": "Gjatë viteve, ne jemi rritur nga një operacion i vogël lokal në një partner të besuar për bizneset në të gjithë kontinentin. Suksesi ynë bazohet në themelin e saktësisë, sigurisë dhe kënaqësisë së klientit.",
+    "story_p3": "Sot, ne operojmë një flotë moderne mjetesh dhe punësojmë një ekip profesionistësh me përvojë të përkushtuar për të siguruar që mallrat tuaja të arrijnë në destinacionin e tyre me siguri dhe në kohë.",
+    "insured_title": "100% e Siguruar",
+    "insured_subtitle": "Të gjitha dërgesat e mbuluara",
+    "values": {
+      "badge": "Pse Na Zgjidhni",
+      "title": "Vlerat Tona",
+      "reliability": {
+        "title": "Besueshmëri",
+        "description": "Dërgesa në kohë, çdo herë."
+      },
+      "safety": {
+        "title": "Siguri",
+        "description": "Mallrat tuaja janë të sigurta me ne."
+      },
+      "professionalism": {
+        "title": "Profesionalizëm",
+        "description": "Ekip me përvojë në çdo hap."
+      }
+    },
+    "cta_button": "Mëso Më Shumë Rreth Nesh"
+  },
+  "partners": {
+    "badge": "Partnerët Tanë",
+    "title": "Të Besuar nga Liderët e Industrisë",
+    "subtitle": "Punojmë me kompanitë më të mira në Europë"
+  },
+  "faq": {
+    "title": "Pyetje të Shpeshta",
+    "subtitle": "Gjeni përgjigjet për pyetjet tuaja",
+    "questions": {
+      "q1": {
+        "question": "Cilat vende mbuloni?",
+        "answer": "Ne mbulojmë të gjitha vendet e Bashkimit Europian, si dhe Ballkanin Perëndimor dhe Turqinë."
+      },
+      "q2": {
+        "question": "Sa kohë zgjat transporti?",
+        "answer": "Koha e transportit varet nga destinacioni. Për Italinë, zakonisht 1-2 ditë, për Gjermaninë 3-4 ditë."
+      },
+      "q3": {
+        "question": "A ofroni sigurim të mallrave?",
+        "answer": "Po, të gjitha dërgesat tona janë të siguruara. Sigurimi bazë përfshihet në çmim."
+      },
+      "q4": {
+        "question": "Si mund të gjurmoj dërgesën time?",
+        "answer": "Ju do të merrni një numër gjurmimi që mund ta përdorni në faqen tonë të internetit."
+      }
+    }
+  },
+  "contact": {
+    "title": "Na Kontaktoni",
+    "subtitle": "Jemi këtu për t'ju ndihmuar",
+    "badge": "Na Kontaktoni",
+    "form_title": "Kërko Preventiv",
+    "form_subtitle": "Plotëso formularin më poshtë dhe do t'ju kthejmë përgjigje brenda 24 orëve.",
+    "address_label": "Adresa",
+    "email_label": "Email",
+    "phone_label": "Telefon",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Merrni përgjigje të menjëhershme via WhatsApp. Jemi online 24/7.",
+    "chat_now": "Chat Tani",
+    "business_hours": "Orari i Punës",
+    "monday_friday": "E Hënë - E Premte",
+    "saturday": "E Shtunë",
+    "sunday": "E Diel",
+    "closed": "Mbyllur",
+    "form": {
+      "name": "Emri juaj",
+      "email": "Email",
+      "phone": "Telefon",
+      "company": "Kompania",
+      "origin": "Origjina",
+      "destination": "Destinacioni",
+      "weight": "Pesha (kg)",
+      "dimensions": "Dimensionet (cm)",
+      "cargo_type": "Lloji i mallrave",
+      "notes": "Shënime",
+      "submit": "Dërgo Kërkesën",
+      "success": "Kërkesa u dërgua me sukses! Do t'ju kontaktojmë së shpejti.",
+      "error": "Ndodhi një gabim. Ju lutemi provoni përsëri.",
+      "contact_info": "Informacioni i Kontaktit",
+      "shipment_details": "Detajet e Dërgesës"
+    },
+    "cargo_types": {
+      "general": "Mallra të përgjithshme",
+      "palletized": "Mallra të paletizuara",
+      "fragile": "Mallra delikate",
+      "refrigerated": "Mallra të ftohta",
+      "hazardous": "Mallra të rrezikshme",
+      "oversized": "Mallra të mëdha"
+    }
+  },
+  "footer": {
+    "description": "Transport profesional ndërkombëtar nga Shqipëria në Europë.",
+    "quick_links": "Lidhje të Shpejta",
+    "contact_info": "Informacion Kontakti",
+    "follow_us": "Na Ndiqni",
+    "rights": "Të gjitha të drejtat e rezervuara.",
+    "stay_updated": "Qëndro i Përditësuar",
+    "newsletter_description": "Merr lajmet dhe përditësimet më të fundit për shërbimet tona.",
+    "email_placeholder": "Vendos email-in tënd",
+    "privacy_policy": "Politika e Privatësisë",
+    "terms_of_service": "Kushtet e Shërbimit"
+  },
+  "stats": {
+    "badge": "EA Transport në Numra",
+    "years_value": "15+",
+    "years_label": "Vite Përvojë",
+    "countries_value": "30+",
+    "countries_label": "Vende të Mbuluara",
+    "fleet_value": "50+",
+    "fleet_label": "Mjete Transporti",
+    "clients_value": "500+",
+    "clients_label": "Klientë të Kënaqur"
+  },
+  "homepage_quote": {
+    "badge": "Merr Preventiv Falas",
+    "title": "Kërko Preventiv Transporti",
+    "subtitle": "Plotëso formularin dhe do t'ju kthejmë përgjigje brenda 24 orëve me një ofertë të personalizuar.",
+    "visual_title": "Transport i Besueshëm në të gjithë Europën",
+    "visual_description": "Nga Shqipëria në çdo destinacion europian, ne sigurojmë dërgesë të sigurt dhe në kohë të mallrave tuaja.",
+    "trust_text": "I besuar nga 500+ biznese në 30+ vende"
+  },
+  "how_it_works": {
+    "badge": "Si Funksionon",
+    "title": "Proces i Thjeshtë, Rezultate të Besueshme",
+    "subtitle": "Nga kërkesa juaj e parë deri te dërgesa përfundimtare, ne menaxhojmë gjithçka profesionalisht.",
+    "steps": {
+      "request": {
+        "title": "Kërko Preventiv",
+        "description": "Na tregoni për nevojat tuaja të dërgesës dhe do t'ju përgjigjemi brenda 24 orëve."
+      },
+      "plan": {
+        "title": "Planifikojmë Rrugën",
+        "description": "Ekipi ynë harton planin optimal të logjistikës për ngarkesën tuaj."
+      },
+      "transport": {
+        "title": "Transport i Sigurt",
+        "description": "Mallrat tuaja udhëtojnë me siguri me gjurmim në kohë reale në Europë."
+      },
+      "delivery": {
+        "title": "Dërgesa e Konfirmuar",
+        "description": "Merrni mallrat tuaja në kohë me dokumentacion të plotë dhe mbështetje."
+      }
+    }
+  },
+  "routes": {
+    "badge": "Mbulimi Ynë",
+    "title": "Nga Shqipëria në Gjithë Europën",
+    "subtitle": "Ne lidhim Shqipërinë me tregjet kryesore europiane përmes rrugëve të besueshme të transportit tokësor.",
+    "cta": "Planifiko Rrugën Tënde",
+    "hub": "Qendër",
+    "delivery_days": "ditë",
+    "countries": {
+      "italy": "Itali",
+      "germany": "Gjermani",
+      "austria": "Austri",
+      "greece": "Greqi",
+      "switzerland": "Zvicër",
+      "france": "Francë",
+      "netherlands": "Holandë",
+      "belgium": "Belgjikë",
+      "spain": "Spanjë"
+    }
+  },
+  "testimonials": {
+    "badge": "Çfarë Thonë Klientët",
+    "title": "I Besuar nga Bizneset në të Gjithë Europën",
+    "subtitle": "Shikoni çfarë thonë klientët tanë për punën me EA Transport.",
+    "reviews": {
+      "review1": {
+        "text": "EA Transport ka qenë partneri ynë i besueshëm për më shumë se 3 vjet. Përpikmëria dhe profesionalizmi i tyre janë të pashoq në rajon.",
+        "name": "Marco Rossi",
+        "role": "Menaxher Logjistike, Milano",
+        "initials": "MR"
+      },
+      "review2": {
+        "text": "Dërgojmë çdo javë nga Tirana në Gjermani dhe kurrë nuk kemi pasur asnjë problem. Komunikim i shkëlqyer gjatë gjithë procesit.",
+        "name": "Arben Hoxha",
+        "role": "Drejtor Eksporti, Tiranë",
+        "initials": "AH"
+      },
+      "review3": {
+        "text": "Zhdoganim i shpejtë dhe çmime konkurruese. Ata menaxhojnë gjithçka në mënyrë që ne të përqendrohemi në rritjen e biznesit tonë.",
+        "name": "Elena Berisha",
+        "role": "Menaxhere Operacionesh, Durrës",
+        "initials": "EB"
+      }
+    }
+  },
+  "cta": {
+    "ready": "Gati për të filluar?",
+    "free_quote": "Preventiv Falas",
+    "support_24_7": "Mbështetje 24/7",
+    "insured": "Dërgesë e Siguruar"
+  },
+  "common": {
+    "loading": "Duke u ngarkuar...",
+    "required": "E detyrueshme",
+    "optional": "Opsionale"
+  }
+}

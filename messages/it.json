@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "title": "EA Transport - Trasporto Merci Internazionale",
+    "description": "Trasporto merci internazionale dall'Albania all'Europa. Servizi di trasporto sicuri e veloci.",
+    "services_description": "Servizi professionali di trasporto merci: spedizioni internazionali, consegna express, soluzioni logistiche e servizi doganali. Richiedi un preventivo gratuito!",
+    "about_description": "EA Transport - compagnia di trasporto internazionale con oltre 15 anni di esperienza. Colleghiamo l'Albania all'Europa con servizi affidabili.",
+    "contact_description": "Contattaci per il trasporto merci internazionale. Richiedi un preventivo gratuito online o chiamaci. Copertura in oltre 30 paesi europei."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "about": "Chi Siamo",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "badge": "Il Tuo Partner Logistico Globale",
+    "title": "Trasporto Merci Internazionale",
+    "subtitle": "Colleghiamo l'Albania all'Europa",
+    "description": "Soluzioni di trasporto professionali per la tua azienda. Consegne sicure e puntuali in tutta Europa.",
+    "cta": "Richiedi Preventivo",
+    "secondary_cta": "I Nostri Servizi",
+    "stats": {
+      "clients_label": "Clienti Soddisfatti",
+      "shipments_label": "Spedizioni Effettuate",
+      "years_label": "Anni di Esperienza",
+      "on_time_label": "Consegna Puntuale",
+      "countries_label": "30+ Paesi"
+    }
+  },
+  "services": {
+    "badge": "I Nostri Servizi",
+    "title": "Soluzioni Logistiche Complete",
+    "subtitle": "Dal trasporto merci alla consegna express, forniamo soluzioni logistiche end-to-end su misura per le esigenze della tua azienda.",
+    "services_count": "Servizi",
+    "years_experience": "Anni di Esperienza",
+    "coverage": "Copertura",
+    "freight": {
+      "title": "Trasporto Merci",
+      "description": "Trasporto sicuro di merci dall'Albania in tutta Europa.",
+      "f1": "Copertura Albania-Europa",
+      "f2": "Carichi completi e parziali",
+      "f3": "Monitoraggio temperatura",
+      "f4": "Tracciamento in tempo reale"
+    },
+    "express": {
+      "title": "Consegna Express",
+      "description": "Servizio rapido per spedizioni urgenti.",
+      "f1": "Consegna 24-48 ore",
+      "f2": "Gestione prioritaria",
+      "f3": "Rotte dirette",
+      "f4": "Veicoli dedicati"
+    },
+    "logistics": {
+      "title": "Soluzioni Logistiche",
+      "description": "Gestione completa della catena di fornitura.",
+      "f1": "Gestione magazzino",
+      "f2": "Controllo inventario",
+      "f3": "Reti di distribuzione",
+      "f4": "Ottimizzazione catena di fornitura"
+    },
+    "customs": {
+      "title": "Servizi Doganali",
+      "description": "Assistenza per procedure doganali e documentazione.",
+      "f1": "Documentazione import/export",
+      "f2": "Sdoganamento",
+      "f3": "Calcolo dazi",
+      "f4": "Supporto conformità"
+    },
+    "request_quote": "Richiedi Preventivo"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "subtitle": "La Nostra Storia",
+    "description": "EA Transport è una compagnia di trasporto internazionale con sede in Albania. Con anni di esperienza nel settore, offriamo servizi di trasporto affidabili e professionali.",
+    "story_title": "Costruire Fiducia Attraverso un Servizio Affidabile",
+    "story_p1": "EA Transport è stata fondata con una semplice missione: fornire servizi di trasporto affidabili, efficienti e professionali che collegano l'Albania all'Europa.",
+    "story_p2": "Nel corso degli anni, siamo cresciuti da una piccola operazione locale a un partner affidabile per le aziende in tutto il continente. Il nostro successo si basa su una solida base di puntualità, sicurezza e soddisfazione del cliente.",
+    "story_p3": "Oggi operiamo con una flotta moderna di veicoli e impieghiamo un team di professionisti esperti dedicati a garantire che le vostre merci raggiungano la destinazione in sicurezza e puntualmente.",
+    "insured_title": "100% Assicurato",
+    "insured_subtitle": "Tutte le spedizioni coperte",
+    "values": {
+      "badge": "Perché Sceglierci",
+      "title": "I Nostri Valori",
+      "reliability": {
+        "title": "Affidabilità",
+        "description": "Consegne puntuali, sempre."
+      },
+      "safety": {
+        "title": "Sicurezza",
+        "description": "Le tue merci sono al sicuro con noi."
+      },
+      "professionalism": {
+        "title": "Professionalità",
+        "description": "Team esperto ad ogni passo."
+      }
+    },
+    "cta_button": "Scopri di Più su di Noi"
+  },
+  "partners": {
+    "badge": "I Nostri Partner",
+    "title": "Scelti dai Leader del Settore",
+    "subtitle": "Collaboriamo con le migliori aziende in Europa"
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "subtitle": "Trova le risposte alle tue domande",
+    "questions": {
+      "q1": {
+        "question": "Quali paesi coprite?",
+        "answer": "Copriamo tutti i paesi dell'Unione Europea, oltre ai Balcani occidentali e alla Turchia."
+      },
+      "q2": {
+        "question": "Quanto tempo richiede il trasporto?",
+        "answer": "Il tempo di trasporto dipende dalla destinazione. Per l'Italia, solitamente 1-2 giorni, per la Germania 3-4 giorni."
+      },
+      "q3": {
+        "question": "Offrite assicurazione sulla merce?",
+        "answer": "Sì, tutte le nostre spedizioni sono assicurate. L'assicurazione base è inclusa nel prezzo."
+      },
+      "q4": {
+        "question": "Come posso tracciare la mia spedizione?",
+        "answer": "Riceverai un numero di tracking che potrai utilizzare sul nostro sito web."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Siamo qui per aiutarti",
+    "badge": "Get in Touch",
+    "form_title": "Richiedi un Preventivo",
+    "form_subtitle": "Compila il modulo qui sotto e ti risponderemo entro 24 ore.",
+    "address_label": "Indirizzo",
+    "email_label": "Email",
+    "phone_label": "Telefono",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Ricevi risposte immediate via WhatsApp. Siamo online 24/7.",
+    "chat_now": "Chat Ora",
+    "business_hours": "Orari di Apertura",
+    "monday_friday": "Lunedì - Venerdì",
+    "saturday": "Sabato",
+    "sunday": "Domenica",
+    "closed": "Chiuso",
+    "form": {
+      "name": "Il tuo nome",
+      "email": "Email",
+      "phone": "Telefono",
+      "company": "Azienda",
+      "origin": "Origine",
+      "destination": "Destinazione",
+      "weight": "Peso (kg)",
+      "dimensions": "Dimensioni (cm)",
+      "cargo_type": "Tipo di merce",
+      "notes": "Note",
+      "submit": "Invia Richiesta",
+      "success": "Richiesta inviata con successo! Ti contatteremo presto.",
+      "error": "Si è verificato un errore. Riprova.",
+      "contact_info": "Informazioni di Contatto",
+      "shipment_details": "Dettagli della Spedizione"
+    },
+    "cargo_types": {
+      "general": "Merce generica",
+      "palletized": "Merce pallettizzata",
+      "fragile": "Merce fragile",
+      "refrigerated": "Merce refrigerata",
+      "hazardous": "Materiali pericolosi",
+      "oversized": "Carichi fuori sagoma"
+    }
+  },
+  "footer": {
+    "description": "Trasporto internazionale professionale dall'Albania all'Europa.",
+    "quick_links": "Link Rapidi",
+    "contact_info": "Info Contatti",
+    "follow_us": "Seguici",
+    "rights": "Tutti i diritti riservati.",
+    "stay_updated": "Resta Aggiornato",
+    "newsletter_description": "Ricevi le ultime notizie e aggiornamenti sui nostri servizi.",
+    "email_placeholder": "Inserisci la tua email",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Termini di Servizio"
+  },
+  "stats": {
+    "badge": "EA Transport in Numeri",
+    "years_value": "15+",
+    "years_label": "Anni di Esperienza",
+    "countries_value": "30+",
+    "countries_label": "Paesi Coperti",
+    "fleet_value": "50+",
+    "fleet_label": "Veicoli nella Flotta",
+    "clients_value": "500+",
+    "clients_label": "Clienti Soddisfatti"
+  },
+  "homepage_quote": {
+    "badge": "Preventivo Gratuito",
+    "title": "Richiedi il Tuo Preventivo di Trasporto",
+    "subtitle": "Compila il modulo e ti risponderemo entro 24 ore con un'offerta personalizzata.",
+    "visual_title": "Trasporto Affidabile in Tutta Europa",
+    "visual_description": "Dall'Albania a qualsiasi destinazione europea, garantiamo consegne sicure e puntuali delle tue merci.",
+    "trust_text": "Scelto da oltre 500 aziende in più di 30 paesi"
+  },
+  "how_it_works": {
+    "badge": "Come Funziona",
+    "title": "Processo Semplice, Risultati Affidabili",
+    "subtitle": "Dalla tua prima richiesta alla consegna finale, gestiamo tutto in modo professionale.",
+    "steps": {
+      "request": {
+        "title": "Richiedi un Preventivo",
+        "description": "Raccontaci le tue esigenze di spedizione e ti risponderemo entro 24 ore."
+      },
+      "plan": {
+        "title": "Pianifichiamo il Percorso",
+        "description": "Il nostro team progetta il piano logistico ottimale per il tuo carico."
+      },
+      "transport": {
+        "title": "Trasporto Sicuro",
+        "description": "Le tue merci viaggiano in sicurezza con tracciamento in tempo reale in Europa."
+      },
+      "delivery": {
+        "title": "Consegna Confermata",
+        "description": "Ricevi le tue merci in tempo con documentazione completa e supporto."
+      }
+    }
+  },
+  "routes": {
+    "badge": "La Nostra Copertura",
+    "title": "Dall'Albania a Tutta l'Europa",
+    "subtitle": "Colleghiamo l'Albania con i principali mercati europei attraverso rotte di trasporto terrestre affidabili.",
+    "cta": "Pianifica il Tuo Percorso",
+    "hub": "Hub",
+    "delivery_days": "giorni",
+    "countries": {
+      "italy": "Italia",
+      "germany": "Germania",
+      "austria": "Austria",
+      "greece": "Grecia",
+      "switzerland": "Svizzera",
+      "france": "Francia",
+      "netherlands": "Paesi Bassi",
+      "belgium": "Belgio",
+      "spain": "Spagna"
+    }
+  },
+  "testimonials": {
+    "badge": "Cosa Dicono i Nostri Clienti",
+    "title": "Scelti dalle Aziende di Tutta Europa",
+    "subtitle": "Scopri cosa dicono i nostri clienti della collaborazione con EA Transport.",
+    "reviews": {
+      "review1": {
+        "text": "EA Transport è il nostro partner affidabile da oltre 3 anni. La loro puntualità e professionalità sono impareggiabili nella regione.",
+        "name": "Marco Rossi",
+        "role": "Responsabile Logistica, Milano",
+        "initials": "MR"
+      },
+      "review2": {
+        "text": "Spediamo settimanalmente da Tirana alla Germania e non abbiamo mai avuto un singolo problema. Comunicazione eccellente durante tutto il processo.",
+        "name": "Arben Hoxha",
+        "role": "Direttore Export, Tirana",
+        "initials": "AH"
+      },
+      "review3": {
+        "text": "Sdoganamento rapido e prezzi competitivi. Gestiscono tutto in modo che noi possiamo concentrarci sulla crescita della nostra azienda.",
+        "name": "Elena Berisha",
+        "role": "Responsabile Operazioni, Durazzo",
+        "initials": "EB"
+      }
+    }
+  },
+  "cta": {
+    "ready": "Pronto per iniziare?",
+    "free_quote": "Preventivo Gratuito",
+    "support_24_7": "Supporto 24/7",
+    "insured": "Consegna Assicurata"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "required": "Obbligatorio",
+    "optional": "Opzionale"
+  }
+}

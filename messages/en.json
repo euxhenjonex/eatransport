@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "title": "EA Transport - International Freight Transport",
+    "description": "International freight transport from Albania to Europe. Safe and fast transport services.",
+    "services_description": "Professional freight transport services: international shipping, express delivery, logistics solutions and customs services. Request a free quote!",
+    "about_description": "EA Transport - international transport company with 15+ years of experience. Connecting Albania to Europe with reliable freight services.",
+    "contact_description": "Contact us for international freight transport. Request a free quote online or call us. Coverage in 30+ European countries."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Your Global Logistics Partner",
+    "title": "International Freight Transport",
+    "subtitle": "Connecting Albania to Europe",
+    "description": "Professional transport solutions for your business. Safe and timely deliveries across Europe.",
+    "cta": "Get a Quote",
+    "secondary_cta": "Our Services",
+    "stats": {
+      "clients_label": "Happy Clients",
+      "shipments_label": "Shipments Delivered",
+      "years_label": "Years Experience",
+      "on_time_label": "On-Time Delivery",
+      "countries_label": "30+ Countries"
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Comprehensive Logistics Solutions",
+    "subtitle": "From freight forwarding to express delivery, we provide end-to-end logistics solutions tailored to your business needs.",
+    "services_count": "Services",
+    "years_experience": "Years Experience",
+    "coverage": "Coverage",
+    "freight": {
+      "title": "Freight Transport",
+      "description": "Safe transport of goods from Albania throughout Europe.",
+      "f1": "Albania to Europe coverage",
+      "f2": "Full and partial loads",
+      "f3": "Temperature monitoring",
+      "f4": "Real-time tracking"
+    },
+    "express": {
+      "title": "Express Delivery",
+      "description": "Fast service for urgent shipments.",
+      "f1": "24-48 hour delivery",
+      "f2": "Priority handling",
+      "f3": "Direct routes",
+      "f4": "Dedicated vehicles"
+    },
+    "logistics": {
+      "title": "Logistics Solutions",
+      "description": "Complete supply chain management.",
+      "f1": "Warehouse management",
+      "f2": "Inventory control",
+      "f3": "Distribution networks",
+      "f4": "Supply chain optimization"
+    },
+    "customs": {
+      "title": "Customs Services",
+      "description": "Assistance with customs procedures and documentation.",
+      "f1": "Import/Export documentation",
+      "f2": "Customs clearance",
+      "f3": "Duty calculation",
+      "f4": "Compliance support"
+    },
+    "request_quote": "Request Quote"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our Story",
+    "description": "EA Transport is an international transport company based in Albania. With years of experience in the industry, we provide reliable and professional transport services.",
+    "story_title": "Building Trust Through Reliable Service",
+    "story_p1": "EA Transport was founded with a simple mission: to provide reliable, efficient, and professional transport services connecting Albania with Europe.",
+    "story_p2": "Over the years, we have grown from a small local operation to a trusted partner for businesses across the continent. Our success is built on a foundation of punctuality, safety, and customer satisfaction.",
+    "story_p3": "Today, we operate a modern fleet of vehicles and employ a team of experienced professionals dedicated to ensuring your goods reach their destination safely and on time.",
+    "insured_title": "100% Insured",
+    "insured_subtitle": "All shipments covered",
+    "values": {
+      "badge": "Why Choose Us",
+      "title": "Our Values",
+      "reliability": {
+        "title": "Reliability",
+        "description": "On-time deliveries, every time."
+      },
+      "safety": {
+        "title": "Safety",
+        "description": "Your goods are safe with us."
+      },
+      "professionalism": {
+        "title": "Professionalism",
+        "description": "Experienced team at every step."
+      }
+    },
+    "cta_button": "Learn More About Us"
+  },
+  "partners": {
+    "badge": "Our Partners",
+    "title": "Trusted by Industry Leaders",
+    "subtitle": "Working with the best companies in Europe"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to your questions",
+    "questions": {
+      "q1": {
+        "question": "Which countries do you cover?",
+        "answer": "We cover all European Union countries, as well as the Western Balkans and Turkey."
+      },
+      "q2": {
+        "question": "How long does transport take?",
+        "answer": "Transport time depends on the destination. For Italy, usually 1-2 days, for Germany 3-4 days."
+      },
+      "q3": {
+        "question": "Do you offer cargo insurance?",
+        "answer": "Yes, all our shipments are insured. Basic insurance is included in the price."
+      },
+      "q4": {
+        "question": "How can I track my shipment?",
+        "answer": "You will receive a tracking number that you can use on our website."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help",
+    "badge": "Get in Touch",
+    "form_title": "Request a Quote",
+    "form_subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+    "address_label": "Address",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Get instant responses via WhatsApp. We're online 24/7.",
+    "chat_now": "Chat Now",
+    "business_hours": "Business Hours",
+    "monday_friday": "Monday - Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed",
+    "form": {
+      "name": "Your name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "origin": "Origin",
+      "destination": "Destination",
+      "weight": "Weight (kg)",
+      "dimensions": "Dimensions (cm)",
+      "cargo_type": "Cargo type",
+      "notes": "Notes",
+      "submit": "Submit Request",
+      "success": "Request sent successfully! We'll contact you soon.",
+      "error": "An error occurred. Please try again.",
+      "contact_info": "Contact Information",
+      "shipment_details": "Shipment Details"
+    },
+    "cargo_types": {
+      "general": "General cargo",
+      "palletized": "Palletized goods",
+      "fragile": "Fragile goods",
+      "refrigerated": "Refrigerated goods",
+      "hazardous": "Hazardous materials",
+      "oversized": "Oversized cargo"
+    }
+  },
+  "footer": {
+    "description": "Professional international transport from Albania to Europe.",
+    "quick_links": "Quick Links",
+    "contact_info": "Contact Info",
+    "follow_us": "Follow Us",
+    "rights": "All rights reserved.",
+    "stay_updated": "Stay Updated",
+    "newsletter_description": "Get the latest news and updates about our services.",
+    "email_placeholder": "Enter your email",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+  },
+  "stats": {
+    "badge": "EA Transport in Numbers",
+    "years_value": "15+",
+    "years_label": "Years of Experience",
+    "countries_value": "30+",
+    "countries_label": "Countries Covered",
+    "fleet_value": "50+",
+    "fleet_label": "Fleet Vehicles",
+    "clients_value": "500+",
+    "clients_label": "Satisfied Clients"
+  },
+  "homepage_quote": {
+    "badge": "Get a Free Quote",
+    "title": "Request Your Transport Quote",
+    "subtitle": "Fill out the form and we'll get back to you within 24 hours with a personalized offer.",
+    "visual_title": "Reliable Transport Across Europe",
+    "visual_description": "From Albania to any European destination, we ensure safe and timely delivery of your goods.",
+    "trust_text": "Trusted by 500+ businesses across 30+ countries"
+  },
+  "how_it_works": {
+    "badge": "How It Works",
+    "title": "Simple Process, Reliable Results",
+    "subtitle": "From your first request to final delivery, we handle everything professionally.",
+    "steps": {
+      "request": {
+        "title": "Request a Quote",
+        "description": "Tell us about your shipment needs and we'll respond within 24 hours."
+      },
+      "plan": {
+        "title": "We Plan the Route",
+        "description": "Our team designs the optimal logistics plan for your cargo."
+      },
+      "transport": {
+        "title": "Safe Transport",
+        "description": "Your goods travel securely with real-time tracking across Europe."
+      },
+      "delivery": {
+        "title": "Delivery Confirmed",
+        "description": "Receive your goods on time with full documentation and support."
+      }
+    }
+  },
+  "routes": {
+    "badge": "Our Coverage",
+    "title": "Albania to All of Europe",
+    "subtitle": "We connect Albania with major European markets through reliable overland transport routes.",
+    "cta": "Plan Your Route",
+    "hub": "Hub",
+    "delivery_days": "days",
+    "countries": {
+      "italy": "Italy",
+      "germany": "Germany",
+      "austria": "Austria",
+      "greece": "Greece",
+      "switzerland": "Switzerland",
+      "france": "France",
+      "netherlands": "Netherlands",
+      "belgium": "Belgium",
+      "spain": "Spain"
+    }
+  },
+  "testimonials": {
+    "badge": "What Our Clients Say",
+    "title": "Trusted by Businesses Across Europe",
+    "subtitle": "See what our clients say about working with EA Transport.",
+    "reviews": {
+      "review1": {
+        "text": "EA Transport has been our reliable partner for over 3 years. Their punctuality and professionalism are unmatched in the region.",
+        "name": "Marco Rossi",
+        "role": "Logistics Manager, Milano",
+        "initials": "MR"
+      },
+      "review2": {
+        "text": "We ship weekly from Tirana to Germany and have never had a single issue. Excellent communication throughout the entire process.",
+        "name": "Arben Hoxha",
+        "role": "Export Director, Tirana",
+        "initials": "AH"
+      },
+      "review3": {
+        "text": "Fast customs clearance and competitive pricing. They handle everything so we can focus on growing our business.",
+        "name": "Elena Berisha",
+        "role": "Operations Manager, Durres",
+        "initials": "EB"
+      }
+    }
+  },
+  "cta": {
+    "ready": "Ready to get started?",
+    "free_quote": "Free Quote",
+    "support_24_7": "24/7 Support",
+    "insured": "Insured Delivery"
+  },
+  "common": {
+    "loading": "Loading...",
+    "required": "Required",
+    "optional": "Optional"
+  }
+}
