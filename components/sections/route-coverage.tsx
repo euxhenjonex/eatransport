@@ -66,7 +66,7 @@ export function RouteCoverage() {
 
           {/* Right column - Visual route hub */}
           <AnimatedSection animation="slide-right" className="relative">
-            <div className="bg-white rounded-3xl p-8 md:p-10 border border-gray-100 shadow-sm">
+            <div className="bg-white rounded-3xl p-5 sm:p-8 md:p-10 border border-gray-100 shadow-sm">
               {/* Hub - Albania */}
               <div className="text-center mb-8">
                 <div className="w-20 h-20 bg-gray-900 rounded-full mx-auto flex items-center justify-center text-white mb-3 shadow-lg ring-4 ring-primary-500/20 animate-pulse-slow">
@@ -94,7 +94,7 @@ export function RouteCoverage() {
               </div>
 
               {/* Destination grid */}
-              <AnimatedContainer as="div" className="grid grid-cols-3 gap-3" staggerDelay={0.05}>
+              <AnimatedContainer as="div" className="grid grid-cols-2 sm:grid-cols-3 gap-3" staggerDelay={0.05}>
                 {DESTINATIONS.map((dest) => (
                   <motion.div
                     key={dest.key}

@@ -81,7 +81,7 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
               {translations.badge}
             </Badge>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               {translations.title}
             </h1>
 
@@ -131,7 +131,7 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
                     />
                   </div>
                   {/* Service number */}
-                  <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary-500 rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="absolute -top-3 -left-3 md:-top-4 md:-left-4 w-12 h-12 md:w-16 md:h-16 bg-primary-500 rounded-xl md:rounded-2xl flex items-center justify-center shadow-lg">
                     <span className="text-2xl font-bold text-white">
                       {String(index + 1).padStart(2, '0')}
                     </span>

@@ -21,7 +21,7 @@ const PARTNERS = [
 function PartnerLogo({ name, initials }: { name: string; initials: string }) {
   return (
     <div className="flex-shrink-0 group">
-      <div className="w-36 h-16 mx-6 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 grayscale hover:grayscale-0 transition-all duration-300 hover:border-primary-200 hover:shadow-md hover:scale-105">
+      <div className="w-28 h-14 mx-3 sm:w-36 sm:h-16 sm:mx-6 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 grayscale hover:grayscale-0 transition-all duration-300 hover:border-primary-200 hover:shadow-md hover:scale-105">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-gray-300 group-hover:bg-primary-100 rounded-lg flex items-center justify-center transition-colors">
             <span className="text-xs font-bold text-gray-600 group-hover:text-primary-600 transition-colors">

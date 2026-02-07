@@ -23,7 +23,7 @@ export function CtaSection() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-600/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
 
-          <div className="relative px-8 py-16 md:px-16 md:py-24">
+          <div className="relative px-5 py-12 md:px-16 md:py-24">
             <div className="max-w-3xl mx-auto text-center">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8">

@@ -45,7 +45,7 @@ export function Testimonials() {
             <motion.div
               key={reviewKey}
               variants={slideUpVariants}
-              className="relative bg-gray-50 rounded-3xl p-8 hover:shadow-md transition-shadow border-l-4 border-primary-500/30"
+              className="relative bg-gray-50 rounded-3xl p-6 md:p-8 hover:shadow-md transition-shadow border-l-4 border-primary-500/30"
             >
               {/* Decorative quote mark */}
               <div className="absolute top-5 right-7 text-5xl font-serif text-primary-200/60 leading-none select-none pointer-events-none">

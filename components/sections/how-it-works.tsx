@@ -81,7 +81,7 @@ export function HowItWorks() {
                   className="relative inline-flex mb-6"
                   variants={popIn}
                 >
-                  <div className="w-24 h-24 rounded-full bg-gray-900 text-white flex items-center justify-center relative z-10 ring-4 ring-gray-900/10">
+                  <div className="w-18 h-18 md:w-24 md:h-24 rounded-full bg-gray-900 text-white flex items-center justify-center relative z-10 ring-4 ring-gray-900/10 [&_svg]:w-6 [&_svg]:h-6 md:[&_svg]:w-8 md:[&_svg]:h-8">
                     {step.icon}
                   </div>
                   {/* Number badge */}
