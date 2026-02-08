@@ -29,7 +29,7 @@ export function FaqAccordion({ showCta = true }: FaqAccordionProps) {
           {/* Left column - Header */}
           <div>
             <Badge variant="dark" icon="star" className="mb-6">
-              FAQ
+              {t('badge')}
             </Badge>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
@@ -42,9 +42,9 @@ export function FaqAccordion({ showCta = true }: FaqAccordionProps) {
 
             {showCta && (
               <div className="bg-gray-50 rounded-2xl p-6 mb-8">
-                <h3 className="font-semibold text-gray-900 mb-2">Still have questions?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">{t('still_have_questions')}</h3>
                 <p className="text-gray-500 text-sm mb-4">
-                  Can&apos;t find the answer you&apos;re looking for? Please contact our friendly team.
+                  {t('cant_find_answer')}
                 </p>
                 <Link href="/contact">
                   <Button variant="dark" className="group">
@@ -65,12 +65,12 @@ export function FaqAccordion({ showCta = true }: FaqAccordionProps) {
             {/* Quick stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-primary-50 rounded-xl p-4 text-center">
-                <div className="text-2xl font-bold text-primary-600">24/7</div>
-                <div className="text-sm text-gray-600">Support</div>
+                <div className="text-2xl font-bold text-primary-600">{t('support_value')}</div>
+                <div className="text-sm text-gray-600">{t('support_label')}</div>
               </div>
               <div className="bg-primary-50 rounded-xl p-4 text-center">
-                <div className="text-2xl font-bold text-primary-600">&lt;24h</div>
-                <div className="text-sm text-gray-600">Response Time</div>
+                <div className="text-2xl font-bold text-primary-600">{t('response_value')}</div>
+                <div className="text-sm text-gray-600">{t('response_label')}</div>
               </div>
             </div>
           </div>

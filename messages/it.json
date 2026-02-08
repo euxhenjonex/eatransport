@@ -19,6 +19,7 @@
     "description": "Soluzioni di trasporto professionali per la tua azienda. Consegne sicure e puntuali in tutta Europa.",
     "cta": "Richiedi Preventivo",
     "secondary_cta": "I Nostri Servizi",
+    "scroll": "Scorri",
     "stats": {
       "clients_label": "Clienti Soddisfatti",
       "shipments_label": "Spedizioni Effettuate",
@@ -94,8 +95,15 @@
     "subtitle": "Collaboriamo con le migliori aziende in Europa"
   },
   "faq": {
+    "badge": "FAQ",
     "title": "Domande Frequenti",
     "subtitle": "Trova le risposte alle tue domande",
+    "still_have_questions": "Hai ancora domande?",
+    "cant_find_answer": "Non trovi la risposta che cerchi? Contatta il nostro team.",
+    "support_value": "24/7",
+    "support_label": "Supporto",
+    "response_value": "<24h",
+    "response_label": "Tempo di Risposta",
     "questions": {
       "q1": {
         "question": "Quali paesi coprite?",
@@ -118,7 +126,7 @@
   "contact": {
     "title": "Contattaci",
     "subtitle": "Siamo qui per aiutarti",
-    "badge": "Get in Touch",
+    "badge": "Contattaci",
     "form_title": "Richiedi un Preventivo",
     "form_subtitle": "Compila il modulo qui sotto e ti risponderemo entro 24 ore.",
     "address_label": "Indirizzo",
@@ -220,6 +228,7 @@
     "subtitle": "Colleghiamo l'Albania con i principali mercati europei attraverso rotte di trasporto terrestre affidabili.",
     "cta": "Pianifica il Tuo Percorso",
     "hub": "Hub",
+    "albania": "Albania",
     "delivery_days": "giorni",
     "countries": {
       "italy": "Italia",

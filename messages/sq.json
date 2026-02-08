@@ -19,6 +19,7 @@
     "description": "Zgjidhje profesionale transporti për biznesin tuaj. Dërgesa të sigurta dhe në kohë në të gjithë Europën.",
     "cta": "Kërko Preventiv",
     "secondary_cta": "Shërbimet Tona",
+    "scroll": "Lëviz",
     "stats": {
       "clients_label": "Klientë të Kënaqur",
       "shipments_label": "Dërgesa të Kryera",
@@ -94,8 +95,15 @@
     "subtitle": "Punojmë me kompanitë më të mira në Europë"
   },
   "faq": {
+    "badge": "FAQ",
     "title": "Pyetje të Shpeshta",
     "subtitle": "Gjeni përgjigjet për pyetjet tuaja",
+    "still_have_questions": "Ende keni pyetje?",
+    "cant_find_answer": "Nuk mund të gjeni përgjigjen që po kërkoni? Ju lutemi kontaktoni ekipin tonë.",
+    "support_value": "24/7",
+    "support_label": "Mbështetje",
+    "response_value": "<24h",
+    "response_label": "Koha e Përgjigjes",
     "questions": {
       "q1": {
         "question": "Cilat vende mbuloni?",
@@ -220,6 +228,7 @@
     "subtitle": "Ne lidhim Shqipërinë me tregjet kryesore europiane përmes rrugëve të besueshme të transportit tokësor.",
     "cta": "Planifiko Rrugën Tënde",
     "hub": "Qendër",
+    "albania": "Shqipëri",
     "delivery_days": "ditë",
     "countries": {
       "italy": "Itali",

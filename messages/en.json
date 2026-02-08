@@ -19,6 +19,7 @@
     "description": "Professional transport solutions for your business. Safe and timely deliveries across Europe.",
     "cta": "Get a Quote",
     "secondary_cta": "Our Services",
+    "scroll": "Scroll",
     "stats": {
       "clients_label": "Happy Clients",
       "shipments_label": "Shipments Delivered",
@@ -94,8 +95,15 @@
     "subtitle": "Working with the best companies in Europe"
   },
   "faq": {
+    "badge": "FAQ",
     "title": "Frequently Asked Questions",
     "subtitle": "Find answers to your questions",
+    "still_have_questions": "Still have questions?",
+    "cant_find_answer": "Can't find the answer you're looking for? Please contact our friendly team.",
+    "support_value": "24/7",
+    "support_label": "Support",
+    "response_value": "<24h",
+    "response_label": "Response Time",
     "questions": {
       "q1": {
         "question": "Which countries do you cover?",
@@ -220,6 +228,7 @@
     "subtitle": "We connect Albania with major European markets through reliable overland transport routes.",
     "cta": "Plan Your Route",
     "hub": "Hub",
+    "albania": "Albania",
     "delivery_days": "days",
     "countries": {
       "italy": "Italy",

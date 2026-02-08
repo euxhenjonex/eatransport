@@ -78,7 +78,7 @@ export function RouteCoverage() {
                     className="rounded-sm"
                   />
                 </div>
-                <div className="font-bold text-gray-900 text-lg">Albania</div>
+                <div className="font-bold text-gray-900 text-lg">{t('albania')}</div>
                 <div className="text-sm text-gray-400">{t('hub')}</div>
               </div>
 
