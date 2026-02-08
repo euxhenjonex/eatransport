@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://eatransport.al';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://transport-ea.com';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -60,11 +60,13 @@ export async function generateMetadata({
       siteName: COMPANY_INFO.name,
       locale: locale === 'sq' ? 'sq_AL' : locale === 'it' ? 'it_IT' : 'en_US',
       type: 'website',
+      images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630, alt: 'EA Transport - International Freight Transport' }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      images: [`${BASE_URL}/og-image.png`],
     },
     robots: {
       index: true,
@@ -80,7 +82,7 @@ function OrganizationSchema() {
     '@type': 'Organization',
     name: COMPANY_INFO.name,
     url: BASE_URL,
-    logo: `${BASE_URL}/logo.png`,
+    logo: `${BASE_URL}/logo_eatransport.svg`,
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: COMPANY_INFO.phone,
@@ -89,13 +91,14 @@ function OrganizationSchema() {
     },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Tirana',
+      streetAddress: 'Vllazërimi, Fllakë',
+      addressLocality: 'Durrës',
+      postalCode: '2001',
       addressCountry: 'AL',
     },
     sameAs: [
       SOCIAL_LINKS.facebook,
       SOCIAL_LINKS.instagram,
-      SOCIAL_LINKS.linkedin,
     ],
   };
 
@@ -113,47 +116,54 @@ function LocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'MovingCompany',
     name: COMPANY_INFO.name,
-    image: `${BASE_URL}/logo.png`,
+    image: `${BASE_URL}/logo_eatransport.svg`,
     url: BASE_URL,
     telephone: COMPANY_INFO.phone,
     email: COMPANY_INFO.email,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Rruga e Transportit, Nr. 123',
-      addressLocality: 'Tirana',
-      postalCode: '1001',
+      streetAddress: 'Vllazërimi, Fllakë',
+      addressLocality: 'Durrës',
+      postalCode: '2001',
       addressCountry: 'AL',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 41.3275,
-      longitude: 19.8187,
+      latitude: 41.3246,
+      longitude: 19.4563,
     },
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         opens: '08:00',
-        closes: '18:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '09:00',
-        closes: '14:00',
+        closes: '17:00',
       },
     ],
     priceRange: '€€',
-    areaServed: {
-      '@type': 'GeoCircle',
-      geoMidpoint: {
-        '@type': 'GeoCoordinates',
-        latitude: 41.3275,
-        longitude: 19.8187,
-      },
-      geoRadius: '2000',
-    },
-    serviceType: ['Freight Transport', 'Logistics', 'Customs Services'],
+    areaServed: [
+      { '@type': 'Country', name: 'Albania' },
+      { '@type': 'Country', name: 'Italy' },
+      { '@type': 'Country', name: 'Germany' },
+      { '@type': 'Country', name: 'Austria' },
+      { '@type': 'Country', name: 'Switzerland' },
+      { '@type': 'Country', name: 'France' },
+      { '@type': 'Country', name: 'Netherlands' },
+      { '@type': 'Country', name: 'Belgium' },
+      { '@type': 'Country', name: 'Spain' },
+      { '@type': 'Country', name: 'Portugal' },
+    ],
+    serviceType: [
+      'Transport Mallrash',
+      'Freight Transport',
+      'Trasporto Merci',
+      'International Shipping',
+      'Refrigerated Transport',
+      'Transport me Frigo',
+      'Express Van Delivery',
+      'Customs Clearance',
+      'Zhdoganim',
+    ],
   };
 
   return (

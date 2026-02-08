@@ -1,10 +1,14 @@
 {
   "metadata": {
-    "title": "EA Transport - Transport Ndërkombëtar i Mallrave",
-    "description": "Transport ndërkombëtar i mallrave nga Shqipëria në Europë. Shërbime transporti të sigurt dhe të shpejtë.",
-    "services_description": "Shërbime profesionale transporti mallrash: transport ndërkombëtar, dërgesa express, zgjidhje logjistike dhe shërbime doganore. Kërko preventiv falas!",
-    "about_description": "EA Transport - kompani transporti ndërkombëtar me 15+ vite përvojë. Lidhim Shqipërinë me Europën me shërbime të besueshme transporti.",
-    "contact_description": "Na kontaktoni për transport mallrash ndërkombëtar. Kërko preventiv falas online ose telefononi. Mbulim në 30+ vende europiane."
+    "title": "EA Transport - Transport Mallrash Ndërkombëtar | Durrës, Shqipëri",
+    "description": "Transport mallrash ndërkombëtar nga Shqipëria në Europë. Kompani transporti me 8+ vite përvojë - transport me frigo, furgon express, zhdoganim. Preventiv falas!",
+    "home_description": "Transport mallrash ndërkombëtar nga Shqipëria në Europë. Kompani transporti me 8+ vite përvojë - transport me frigo, furgon express, zhdoganim. Preventiv falas!",
+    "services_title": "Transport Mallrash, Frigo & Express | EA Transport",
+    "services_description": "Shërbime profesionale transporti mallrash: transport ndërkombëtar, transport me frigo, furgon express, zgjidhje logjistike dhe zhdoganim. Kërko preventiv falas!",
+    "about_title": "Rreth EA Transport - Kompani Transporti Mallrash Durrës",
+    "about_description": "EA Transport - kompani transporti ndërkombëtar me 8+ vite përvojë në Durrës. Lidhim Shqipërinë me Europën me transport mallrash të besueshëm.",
+    "contact_title": "Kërko Preventiv Transport Mallrash | EA Transport",
+    "contact_description": "Na kontaktoni për transport mallrash ndërkombëtar. Kërko preventiv falas online ose telefononi. Mbulim 30+ vende europiane me transport me frigo dhe express."
   },
   "nav": {
     "home": "Kryefaqja",
@@ -31,7 +35,7 @@
   "services": {
     "badge": "Shërbimet Tona",
     "title": "Zgjidhje Gjithëpërfshirëse Logjistike",
-    "subtitle": "Nga transporti i mallrave deri te dërgesa express, ne ofrojmë zgjidhje logjistike të plota të përshtatura për nevojat e biznesit tuaj.",
+    "subtitle": "Nga transporti ndërkombëtar i mallrave deri te transporti me temperaturë të kontrolluar dhe dërgesa express me furgon, ne ofrojmë zgjidhje logjistike gjithëpërfshirëse të përshtatura për nevojat e biznesit tuaj në 30+ vende europiane.",
     "services_count": "Shërbime",
     "years_experience": "Vite Përvojë",
     "coverage": "Mbulim",
@@ -64,11 +68,11 @@
   "about": {
     "title": "Rreth Nesh",
     "subtitle": "Historia Jonë",
-    "description": "EA Transport është një kompani transporti ndërkombëtar me seli në Shqipëri. Me vite përvojë në industri, ne ofrojmë shërbime transporti të besueshme dhe profesionale.",
+    "description": "EA Transport është një kompani lider e transportit ndërkombëtar me seli në Shqipëri, e specializuar në logjistikën e mallrave në Europë. Me mbi 8 vite përvojë dhe një flotë moderne me 15+ mjete, ne ofrojmë shërbime transporti të besueshme dhe të siguruara në 30+ vende.",
     "story_title": "Ndërtimi i Besimit Përmes Shërbimit të Besueshëm",
-    "story_p1": "EA Transport u themelua me një mision të thjeshtë: të ofrojë shërbime transporti të besueshme, efikase dhe profesionale që lidhin Shqipërinë me Evropën.",
-    "story_p2": "Gjatë viteve, ne jemi rritur nga një operacion i vogël lokal në një partner të besuar për bizneset në të gjithë kontinentin. Suksesi ynë bazohet në themelin e saktësisë, sigurisë dhe kënaqësisë së klientit.",
-    "story_p3": "Sot, ne operojmë një flotë moderne mjetesh dhe punësojmë një ekip profesionistësh me përvojë të përkushtuar për të siguruar që mallrat tuaja të arrijnë në destinacionin e tyre me siguri dhe në kohë.",
+    "story_p1": "EA Transport u themelua me një mision të qartë: të lidhë tregjet shqiptare me ato europiane përmes shërbimeve të transportit të besueshëm, efikas dhe profesional. Që nga dita e parë, ne kemi vendosur në prioritet ndërtimin e marrëdhënieve afatgjata me klientët tanë bazuar në besim dhe transparencë.",
+    "story_p2": "Gjatë viteve, ne jemi rritur nga një operacion i vogël lokal në një partner logjistik të besuar për mbi 500 biznese në të gjithë kontinentin. Suksesi ynë bazohet në themelin e saktësisë, sigurisë së mallrave, çmimeve konkurruese dhe përkushtimit të palëkundur ndaj kënaqësisë së klientit. Ne menaxhojmë gjithçka nga zhdoganimi deri te dërgesa përfundimtare.",
+    "story_p3": "Sot, ne operojmë një flotë moderne kamionësh, mjetesh me frigorifer dhe furgonësh express, me një ekip profesionistësh me përvojë në logjistikë. Çdo dërgesë është plotësisht e siguruar dhe gjurmohet në kohë reale, duke u dhënë klientëve tanë qetësi të plotë nga marrja deri te dërgesa përfundimtare.",
     "insured_title": "100% e Siguruar",
     "insured_subtitle": "Të gjitha dërgesat e mbuluara",
     "values": {
@@ -125,7 +129,7 @@
   },
   "contact": {
     "title": "Na Kontaktoni",
-    "subtitle": "Jemi këtu për t'ju ndihmuar",
+    "subtitle": "Kontaktoni ekipin tonë të logjistikës për një preventiv falas pa asnjë detyrim. Përgjigjemi brenda 24 orëve dhe jemi të disponueshëm me telefon, email ose WhatsApp.",
     "badge": "Na Kontaktoni",
     "form_title": "Kërko Preventiv",
     "form_subtitle": "Plotëso formularin më poshtë dhe do t'ju kthejmë përgjigje brenda 24 orëve.",
@@ -272,6 +276,44 @@
     "free_quote": "Preventiv Falas",
     "support_24_7": "Mbështetje 24/7",
     "insured": "Dërgesë e Siguruar"
+  },
+  "privacy": {
+    "title": "Politika e Privatësisë",
+    "last_updated": "Përditësimi i fundit: Shkurt 2026",
+    "intro": "EA Transport është e përkushtuar për mbrojtjen e privatësisë së përdoruesve dhe klientëve tanë. Kjo Politikë e Privatësisë shpjegon se si ne mbledhim, përdorim dhe mbrojmë informacionin tuaj personal kur vizitoni faqen tonë të internetit ose përdorni shërbimet tona.",
+    "collection_title": "Informacioni që Mbledhim",
+    "collection_text": "Ne mund të mbledhim informacion personal që ju jepni vullnetarisht kur plotësoni formularin e kontaktit ose kërkesës për preventiv, përfshirë emrin tuaj, adresën e email-it, numrin e telefonit, emrin e kompanisë dhe detajet e dërgesës. Gjithashtu mbledhim automatikisht informacion teknik si adresa IP, lloji i shfletuesit dhe faqet e vizituara përmes cookie-ve.",
+    "use_title": "Si e Përdorim Informacionin Tuaj",
+    "use_text": "Ne e përdorim informacionin e mbledhur për t'iu përgjigjur pyetjeve dhe kërkesave tuaja për preventiv, për të ofruar shërbimet tona të transportit dhe logjistikës, për të përmirësuar faqen tonë, për t'ju dërguar komunikime lidhur me shërbimet, dhe për të përmbushur detyrimet ligjore.",
+    "sharing_title": "Ndarja e Informacionit",
+    "sharing_text": "Ne nuk shesim ose japim me qira informacionin tuaj personal palëve të treta. Ne mund ta ndajmë informacionin tuaj me ofrues shërbimesh të besuar që na ndihmojnë në operimin e faqes dhe ofrimin e shërbimeve tona, si dhe kur kërkohet nga ligji.",
+    "security_title": "Siguria e të Dhënave",
+    "security_text": "Ne zbatojmë masa të përshtatshme teknike dhe organizative të sigurisë për të mbrojtur informacionin tuaj personal kundër aksesit të paautorizuar, ndryshimit, zbulimit ose shkatërrimit.",
+    "rights_title": "Të Drejtat Tuaja",
+    "rights_text": "Ju keni të drejtë të aksesoni, korrigjoni ose fshini të dhënat tuaja personale. Gjithashtu mund të kundërshtoni ose kufizoni përpunimin e caktuar të të dhënave tuaja. Për të ushtruar këto të drejta, ju lutemi na kontaktoni.",
+    "contact_title": "Na Kontaktoni",
+    "contact_text": "Nëse keni pyetje rreth kësaj Politike të Privatësisë, ju lutemi na kontaktoni në info@transport-ea.com."
+  },
+  "terms": {
+    "title": "Kushtet e Shërbimit",
+    "last_updated": "Përditësimi i fundit: Shkurt 2026",
+    "intro": "Mirë se vini në EA Transport. Duke aksesuar dhe përdorur faqen tonë të internetit dhe shërbimet tona, ju pranoni të jeni të lidhur nga këto Kushte Shërbimi. Ju lutemi lexoni me kujdes përpara se të përdorni shërbimet tona.",
+    "services_title": "Shërbimet Tona",
+    "services_text": "EA Transport ofron shërbime transporti ndërkombëtar mallrash, transporti me frigorifer dhe dërgesa express me furgon midis Shqipërisë dhe Europës. Të gjitha shërbimet janë subjekt i disponueshmërisë dhe pranimit tonë të kërkesës suaj për dërgesë.",
+    "quotes_title": "Preventivat dhe Çmimet",
+    "quotes_text": "Të gjitha preventivat e ofruara përmes faqes sonë janë vlerësime dhe mund të ndryshojnë bazuar në detajet aktuale të dërgesës, dimensionet, peshën dhe kushtet e rrugës. Çmimi përfundimtar do të konfirmohet përpara dërgesës. Preventivat janë të vlefshme për 7 ditë.",
+    "liability_title": "Përgjegjësia dhe Sigurimi",
+    "liability_text": "Të gjitha dërgesat mbulohen nga sigurimi ynë standard i mallrave. Përgjegjësia e EA Transport kufizohet sipas kushteve të policës së sigurimit. Ne nuk jemi përgjegjës për vonesa të shkaktuara nga forcat madhore, procedurat doganore ose rrethana jashtë kontrollit tonë.",
+    "obligations_title": "Detyrimet e Klientit",
+    "obligations_text": "Klientët janë përgjegjës për dhënien e informacionit të saktë të dërgesës, sigurimin që mallrat përputhen me të gjitha ligjet, paketimin e duhur të mallrave për transport dhe sigurimin e dokumentacionit të nevojshëm për zhdoganim.",
+    "prohibited_title": "Artikuj të Ndaluar",
+    "prohibited_text": "Ne rezervojmë të drejtën për të refuzuar transportin e mallrave të paligjshme, materialeve të rrezikshme të padeklaruara, artikujve që shkelin rregullat e importit/eksportit dhe çdo mall që mund të përbëjë rrezik për sigurinë.",
+    "termination_title": "Përfundimi",
+    "termination_text": "Secila palë mund të përfundojë marrëveshjen e shërbimit me njoftim me shkrim. EA Transport rezervon të drejtën për të refuzuar shërbimin ndaj çdo klienti që shkel këto kushte.",
+    "law_title": "Ligji i Zbatueshëm",
+    "law_text": "Këto Kushte Shërbimi rregullohen nga ligjet e Republikës së Shqipërisë. Çdo mosmarrëveshje do të zgjidhet në gjykatat e Tiranës, Shqipëri.",
+    "contact_title": "Na Kontaktoni",
+    "contact_text": "Nëse keni pyetje rreth këtyre Kushteve të Shërbimit, ju lutemi na kontaktoni në info@transport-ea.com."
   },
   "common": {
     "loading": "Duke u ngarkuar...",

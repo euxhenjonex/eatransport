@@ -51,6 +51,7 @@ export function Hero() {
           playsInline
           preload="metadata"
           poster="/ea_transport_hero.webp"
+          aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover object-[70%_center] md:object-center"
         >
           <source src="/video1.webm" type="video/webm" />
@@ -77,7 +78,7 @@ export function Hero() {
               </HeroStaggerItem>
 
               <HeroStaggerItem>
-                <p className="text-lg md:text-xl text-gray-300 mb-5 leading-relaxed">
+                <p className="text-lg md:text-xl text-gray-200 mb-5 leading-relaxed">
                   {t('description')}
                 </p>
               </HeroStaggerItem>

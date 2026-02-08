@@ -1,7 +1,21 @@
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations, getMessages } from 'next-intl/server';
 import { Hero } from '@/components/sections/hero';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const tMeta = await getTranslations({ locale, namespace: 'metadata' });
+
+  return {
+    title: tMeta('title'),
+    description: tMeta('home_description'),
+  };
+}
 
 // Lazy load below-the-fold sections for faster initial load
 const ServicesOverview = dynamic(() => import('@/components/sections/services-overview').then(m => m.ServicesOverview), {
@@ -38,8 +52,28 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const messages = await getMessages({ locale });
+  const faq = (messages.faq as { questions: Record<string, { question: string; answer: string }> }).questions;
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: Object.values(faq).map((q) => ({
+      '@type': 'Question',
+      name: q.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Hero />
       <Suspense>
         <ServicesOverview />

@@ -1,10 +1,14 @@
 {
   "metadata": {
-    "title": "EA Transport - Trasporto Merci Internazionale",
-    "description": "Trasporto merci internazionale dall'Albania all'Europa. Servizi di trasporto sicuri e veloci.",
-    "services_description": "Servizi professionali di trasporto merci: spedizioni internazionali, consegna express, soluzioni logistiche e servizi doganali. Richiedi un preventivo gratuito!",
-    "about_description": "EA Transport - compagnia di trasporto internazionale con oltre 15 anni di esperienza. Colleghiamo l'Albania all'Europa con servizi affidabili.",
-    "contact_description": "Contattaci per il trasporto merci internazionale. Richiedi un preventivo gratuito online o chiamaci. Copertura in oltre 30 paesi europei."
+    "title": "EA Transport - Trasporto Merci Albania Italia | Spedizioni Internazionali",
+    "description": "Trasporto merci internazionale Albania-Italia e Europa. Spedizioni sicure, trasporto refrigerato, consegna express. Preventivo gratuito in 24h!",
+    "home_description": "Trasporto merci internazionale Albania-Italia e Europa. Spedizioni sicure, trasporto refrigerato, consegna express. Preventivo gratuito in 24h!",
+    "services_title": "Trasporto Merci, Refrigerato & Express | EA Transport",
+    "services_description": "Servizi professionali di trasporto merci: spedizioni internazionali Albania-Italia, trasporto refrigerato, furgone express, sdoganamento. Preventivo gratuito!",
+    "about_title": "Chi Siamo - EA Transport Trasporto Merci Internazionale",
+    "about_description": "EA Transport - compagnia di trasporto internazionale con oltre 8 anni di esperienza. Colleghiamo l'Albania all'Italia e all'Europa con servizi affidabili.",
+    "contact_title": "Richiedi Preventivo Gratuito | EA Transport",
+    "contact_description": "Contattaci per trasporto merci Albania-Italia e Europa. Preventivo gratuito online o telefonico. Copertura in 30+ paesi con trasporto refrigerato e express."
   },
   "nav": {
     "home": "Home",
@@ -31,7 +35,7 @@
   "services": {
     "badge": "I Nostri Servizi",
     "title": "Soluzioni Logistiche Complete",
-    "subtitle": "Dal trasporto merci alla consegna express, forniamo soluzioni logistiche end-to-end su misura per le esigenze della tua azienda.",
+    "subtitle": "Dal trasporto merci internazionale al trasporto a temperatura controllata e alla consegna express con furgone, forniamo soluzioni logistiche complete e personalizzate per le esigenze della tua azienda in oltre 30 paesi europei.",
     "services_count": "Servizi",
     "years_experience": "Anni di Esperienza",
     "coverage": "Copertura",
@@ -64,11 +68,11 @@
   "about": {
     "title": "Chi Siamo",
     "subtitle": "La Nostra Storia",
-    "description": "EA Transport è una compagnia di trasporto internazionale con sede in Albania. Con anni di esperienza nel settore, offriamo servizi di trasporto affidabili e professionali.",
+    "description": "EA Transport è una compagnia leader nel trasporto internazionale con sede in Albania, specializzata nella logistica merci in Europa. Con oltre 8 anni di esperienza e una flotta moderna di 15+ veicoli, offriamo servizi di trasporto affidabili e completamente assicurati in oltre 30 paesi.",
     "story_title": "Costruire Fiducia Attraverso un Servizio Affidabile",
-    "story_p1": "EA Transport è stata fondata con una semplice missione: fornire servizi di trasporto affidabili, efficienti e professionali che collegano l'Albania all'Europa.",
-    "story_p2": "Nel corso degli anni, siamo cresciuti da una piccola operazione locale a un partner affidabile per le aziende in tutto il continente. Il nostro successo si basa su una solida base di puntualità, sicurezza e soddisfazione del cliente.",
-    "story_p3": "Oggi operiamo con una flotta moderna di veicoli e impieghiamo un team di professionisti esperti dedicati a garantire che le vostre merci raggiungano la destinazione in sicurezza e puntualmente.",
+    "story_p1": "EA Transport è stata fondata con una missione chiara: colmare il divario tra l'Albania e i mercati europei attraverso servizi di trasporto merci affidabili, efficienti e professionali. Fin dal primo giorno, abbiamo dato priorità alla costruzione di relazioni durature con i nostri clienti basate sulla fiducia e la trasparenza.",
+    "story_p2": "Nel corso degli anni, siamo cresciuti da una piccola operazione locale a un partner logistico affidabile per oltre 500 aziende in tutto il continente. Il nostro successo si basa su solide fondamenta di puntualità, sicurezza delle merci, prezzi competitivi e impegno costante per la soddisfazione del cliente. Gestiamo tutto, dallo sdoganamento alla consegna dell'ultimo miglio.",
+    "story_p3": "Oggi operiamo con una flotta moderna di camion, veicoli refrigerati e furgoni express, con un team di professionisti esperti nella logistica. Ogni spedizione è completamente assicurata e tracciata in tempo reale, garantendo ai nostri clienti totale tranquillità dal ritiro alla consegna finale.",
     "insured_title": "100% Assicurato",
     "insured_subtitle": "Tutte le spedizioni coperte",
     "values": {
@@ -125,7 +129,7 @@
   },
   "contact": {
     "title": "Contattaci",
-    "subtitle": "Siamo qui per aiutarti",
+    "subtitle": "Contatta il nostro team logistico per un preventivo gratuito e senza impegno. Rispondiamo entro 24 ore e siamo disponibili via telefono, email o WhatsApp.",
     "badge": "Contattaci",
     "form_title": "Richiedi un Preventivo",
     "form_subtitle": "Compila il modulo qui sotto e ti risponderemo entro 24 ore.",
@@ -272,6 +276,44 @@
     "free_quote": "Preventivo Gratuito",
     "support_24_7": "Supporto 24/7",
     "insured": "Consegna Assicurata"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "last_updated": "Ultimo aggiornamento: Febbraio 2026",
+    "intro": "EA Transport si impegna a proteggere la privacy dei nostri utenti e clienti. Questa Privacy Policy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali quando visiti il nostro sito web o utilizzi i nostri servizi.",
+    "collection_title": "Informazioni che Raccogliamo",
+    "collection_text": "Possiamo raccogliere informazioni personali che fornisci volontariamente quando compili il nostro modulo di contatto o richiesta preventivo, inclusi nome, indirizzo email, numero di telefono, nome dell'azienda e dettagli della spedizione. Raccogliamo inoltre automaticamente informazioni tecniche come indirizzo IP, tipo di browser e pagine visitate tramite cookie.",
+    "use_title": "Come Utilizziamo le Tue Informazioni",
+    "use_text": "Utilizziamo le informazioni raccolte per rispondere alle tue richieste e preventivi, fornire i nostri servizi di trasporto e logistica, migliorare il nostro sito web, inviarti comunicazioni relative ai servizi e adempiere agli obblighi legali.",
+    "sharing_title": "Condivisione delle Informazioni",
+    "sharing_text": "Non vendiamo né affittiamo le tue informazioni personali a terzi. Possiamo condividere le tue informazioni con fornitori di servizi di fiducia che ci assistono nell'operare il sito e nel fornire i nostri servizi, e quando richiesto dalla legge.",
+    "security_title": "Sicurezza dei Dati",
+    "security_text": "Implementiamo misure di sicurezza tecniche e organizzative appropriate per proteggere le tue informazioni personali contro accesso non autorizzato, alterazione, divulgazione o distruzione.",
+    "rights_title": "I Tuoi Diritti",
+    "rights_text": "Hai il diritto di accedere, correggere o eliminare i tuoi dati personali. Puoi anche opporti o limitare determinati trattamenti dei tuoi dati. Per esercitare questi diritti, contattaci utilizzando le informazioni nella pagina Contatti.",
+    "contact_title": "Contattaci",
+    "contact_text": "Per domande su questa Privacy Policy, contattaci a info@transport-ea.com."
+  },
+  "terms": {
+    "title": "Termini di Servizio",
+    "last_updated": "Ultimo aggiornamento: Febbraio 2026",
+    "intro": "Benvenuto su EA Transport. Accedendo e utilizzando il nostro sito web e i nostri servizi, accetti di essere vincolato da questi Termini di Servizio. Leggili attentamente prima di utilizzare i nostri servizi.",
+    "services_title": "I Nostri Servizi",
+    "services_text": "EA Transport fornisce servizi di trasporto merci internazionale, trasporto refrigerato e consegna express con furgone tra Albania ed Europa. Tutti i servizi sono soggetti a disponibilità e alla nostra accettazione della richiesta di spedizione.",
+    "quotes_title": "Preventivi e Prezzi",
+    "quotes_text": "Tutti i preventivi forniti tramite il nostro sito sono stime e possono essere soggetti a variazioni in base ai dettagli effettivi della spedizione, dimensioni, peso e condizioni del percorso. Il prezzo finale sarà confermato prima della spedizione. I preventivi sono validi per 7 giorni.",
+    "liability_title": "Responsabilità e Assicurazione",
+    "liability_text": "Tutte le spedizioni sono coperte dalla nostra assicurazione standard sulle merci. La responsabilità di EA Transport è limitata ai termini della polizza assicurativa applicabile. Non siamo responsabili per ritardi causati da forza maggiore, procedure doganali o circostanze al di fuori del nostro controllo.",
+    "obligations_title": "Obblighi del Cliente",
+    "obligations_text": "I clienti sono responsabili di fornire informazioni accurate sulla spedizione, garantire che le merci siano conformi a tutte le leggi applicabili, imballare adeguatamente le merci per il trasporto e fornire tutta la documentazione necessaria per lo sdoganamento.",
+    "prohibited_title": "Articoli Vietati",
+    "prohibited_text": "Ci riserviamo il diritto di rifiutare il trasporto di merci illegali, materiali pericolosi non dichiarati, articoli che violano le normative di importazione/esportazione e qualsiasi merce che possa rappresentare un rischio per la sicurezza.",
+    "termination_title": "Risoluzione",
+    "termination_text": "Ciascuna parte può risolvere l'accordo di servizio con preavviso scritto. EA Transport si riserva il diritto di rifiutare il servizio a qualsiasi cliente che violi questi termini.",
+    "law_title": "Legge Applicabile",
+    "law_text": "Questi Termini di Servizio sono regolati dalle leggi della Repubblica d'Albania. Qualsiasi controversia sarà risolta nei tribunali di Tirana, Albania.",
+    "contact_title": "Contattaci",
+    "contact_text": "Per domande su questi Termini di Servizio, contattaci a info@transport-ea.com."
   },
   "common": {
     "loading": "Caricamento...",

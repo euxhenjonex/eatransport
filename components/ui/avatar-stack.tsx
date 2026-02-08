@@ -38,7 +38,7 @@ export function AvatarStack({ count, label, className }: AvatarStackProps) {
       </div>
       <div>
         <div className="text-lg font-bold text-white">{count}+</div>
-        <div className="text-sm text-gray-300">{label}</div>
+        <div className="text-sm text-gray-200">{label}</div>
       </div>
     </div>
   );

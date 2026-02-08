@@ -4,17 +4,18 @@ import { Badge } from '@/components/ui/badge';
 import { QuoteForm } from '@/components/forms/quote-form';
 import { COMPANY_INFO } from '@/lib/constants';
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://transport-ea.com';
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'contact' });
   const tMeta = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    title: `${t('title')} | EA Transport`,
+    title: tMeta('contact_title'),
     description: tMeta('contact_description'),
   };
 }
@@ -29,8 +30,22 @@ export default async function ContactPage({
   const t = await getTranslations({ locale, namespace: 'contact' });
   const tFooter = await getTranslations({ locale, namespace: 'footer' });
 
+  const localePrefix = locale === 'sq' ? '' : `/${locale}`;
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}${localePrefix || '/'}` },
+      { '@type': 'ListItem', position: 2, name: t('title'), item: `${BASE_URL}${localePrefix}/contact` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-gray-900/80" />
@@ -49,7 +64,7 @@ export default async function ContactPage({
               {t('title')}
             </h1>
 
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-200 leading-relaxed">
               {t('subtitle')}
             </p>
           </div>

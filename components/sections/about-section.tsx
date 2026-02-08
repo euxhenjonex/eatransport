@@ -111,7 +111,7 @@ export function AboutSection() {
             {/* Main image */}
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
-                src="/camionea.png"
+                src="/camionea.webp"
                 alt="EA Transport truck"
                 fill
                 className="object-cover"

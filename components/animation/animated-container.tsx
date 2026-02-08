@@ -48,15 +48,18 @@ export function AnimatedContainer({
       variants={containerVariants}
     >
       {Array.isArray(children)
-        ? children.map((child, index) => (
-            <motion.div
-              key={index}
-              variants={childVariants}
-              className={childClassName}
-            >
-              {child}
-            </motion.div>
-          ))
+        ? children.map((child, index) => {
+            const ChildWrapper = as === 'ul' || as === 'ol' ? motion.li : motion.div;
+            return (
+              <ChildWrapper
+                key={index}
+                variants={childVariants}
+                className={childClassName}
+              >
+                {child}
+              </ChildWrapper>
+            );
+          })
         : children}
     </Component>
   );

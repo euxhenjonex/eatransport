@@ -16,5 +16,4 @@ export const COMPANY_INFO = {
 export const SOCIAL_LINKS = {
   facebook: 'https://facebook.com/eatransport',
   instagram: 'https://instagram.com/eatransport',
-  linkedin: 'https://linkedin.com/company/eatransport',
 } as const;

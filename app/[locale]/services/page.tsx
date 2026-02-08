@@ -1,5 +1,8 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { ServicesPageContent } from '@/components/sections/services-page-content';
+import { COMPANY_INFO } from '@/lib/constants';
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://transport-ea.com';
 
 export async function generateMetadata({
   params,
@@ -7,11 +10,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'services' });
   const tMeta = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    title: `${t('title')} | EA Transport`,
+    title: tMeta('services_title'),
     description: tMeta('services_description'),
   };
 }
@@ -54,5 +56,68 @@ export default async function ServicesPage({
     },
   };
 
-  return <ServicesPageContent locale={locale} translations={translations} />;
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
+  const localePrefix = locale === 'sq' ? '' : `/${locale}`;
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}${localePrefix || '/'}` },
+      { '@type': 'ListItem', position: 2, name: tNav('services'), item: `${BASE_URL}${localePrefix}/services` },
+    ],
+  };
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    provider: {
+      '@type': 'Organization',
+      name: COMPANY_INFO.name,
+      url: BASE_URL,
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: t('title'),
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: t('freight.title'),
+            description: t('freight.description'),
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: t('frigo.title'),
+            description: t('frigo.description'),
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: t('express.title'),
+            description: t('express.description'),
+          },
+        },
+      ],
+    },
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ServicesPageContent locale={locale} translations={translations} />
+    </>
+  );
 }

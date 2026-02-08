@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { CtaSection } from '@/components/sections/cta-section';
 import { AnimatedSection } from '@/components/animation/animated-section';
-import { AnimatedContainer } from '@/components/animation/animated-container';
+
 import { fadeUp } from '@/lib/animations';
 
 const SERVICES = [
@@ -96,7 +96,7 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
               {translations.title}
             </h1>
 
-            <p className="text-xl text-gray-300 leading-relaxed mb-8">
+            <p className="text-xl text-gray-200 leading-relaxed mb-8">
               {translations.subtitle}
             </p>
 
@@ -137,6 +137,7 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
                       alt={t(`${service.key}Title`)}
                       fill
                       className="object-cover"
+                      priority={index === 0}
                     />
                     {/* Gradient overlay like about-section */}
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-transparent to-transparent" />
@@ -168,7 +169,16 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
                   </p>
 
                   {/* Feature list — styled like about-section feature cards */}
-                  <AnimatedContainer as="ul" className="space-y-3 mb-10" staggerDelay={0.1}>
+                  <motion.ul
+                    className="space-y-3 mb-10"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.1 }}
+                    variants={{
+                      hidden: {},
+                      visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
+                    }}
+                  >
                     {service.featureKeys.map((featureKey) => (
                       <motion.li
                         key={featureKey}
@@ -183,7 +193,7 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
                         <span className="text-gray-700 font-medium">{translations.features[featureKey]}</span>
                       </motion.li>
                     ))}
-                  </AnimatedContainer>
+                  </motion.ul>
 
                   <Link href="/contact">
                     <Button variant="dark" size="lg" className="group">

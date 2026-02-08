@@ -59,7 +59,7 @@ export function AccordionItem({ title, children, index, isOpen, onToggle, varian
           )}
         >
           <div className="overflow-hidden">
-            <div className="px-6 pb-5 text-gray-300 pl-[72px]">
+            <div className="px-6 pb-5 text-gray-200 pl-[72px]">
               {children}
             </div>
           </div>

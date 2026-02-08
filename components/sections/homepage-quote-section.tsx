@@ -33,7 +33,7 @@ export function HomepageQuoteSection() {
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
                   {t('visual_title')}
                 </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-200 text-sm leading-relaxed">
                   {t('visual_description')}
                 </p>
               </div>

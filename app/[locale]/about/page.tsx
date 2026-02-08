@@ -5,6 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { WhyChooseUs } from '@/components/sections/why-choose-us';
 import { CtaSection } from '@/components/sections/cta-section';
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://transport-ea.com';
+
 const ABOUT_STATS = [
   {
     valueKey: 'years_value',
@@ -41,11 +43,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'about' });
   const tMeta = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    title: `${t('title')} | EA Transport`,
+    title: tMeta('about_title'),
     description: tMeta('about_description'),
   };
 }
@@ -60,8 +61,22 @@ export default async function AboutPage({
   const t = await getTranslations({ locale, namespace: 'about' });
   const tStats = await getTranslations({ locale, namespace: 'stats' });
 
+  const localePrefix = locale === 'sq' ? '' : `/${locale}`;
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}${localePrefix || '/'}` },
+      { '@type': 'ListItem', position: 2, name: t('title'), item: `${BASE_URL}${localePrefix}/about` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-gray-900/80" />
@@ -80,7 +95,7 @@ export default async function AboutPage({
               {t('title')}
             </h1>
 
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-200 leading-relaxed">
               {t('description')}
             </p>
           </div>

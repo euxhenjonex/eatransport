@@ -1,10 +1,14 @@
 {
   "metadata": {
-    "title": "EA Transport - International Freight Transport",
-    "description": "International freight transport from Albania to Europe. Safe and fast transport services.",
-    "services_description": "Professional freight transport services: international shipping, express delivery, logistics solutions and customs services. Request a free quote!",
-    "about_description": "EA Transport - international transport company with 15+ years of experience. Connecting Albania to Europe with reliable freight services.",
-    "contact_description": "Contact us for international freight transport. Request a free quote online or call us. Coverage in 30+ European countries."
+    "title": "EA Transport - Freight Transport Albania to Europe | International Shipping",
+    "description": "International freight transport from Albania to Europe. Reliable shipping to 30+ countries - refrigerated transport, express delivery, customs clearance. Free quote!",
+    "home_description": "International freight transport from Albania to Europe. Reliable shipping to 30+ countries - refrigerated transport, express delivery, customs clearance. Free quote!",
+    "services_title": "Freight, Refrigerated & Express Transport | EA Transport",
+    "services_description": "Professional freight transport services: international shipping, refrigerated transport, express van delivery, logistics solutions and customs clearance. Free quote!",
+    "about_title": "About EA Transport - International Transport Company Albania",
+    "about_description": "EA Transport - international transport company with 8+ years of experience. Connecting Albania to Europe with reliable freight, refrigerated and express services.",
+    "contact_title": "Request a Free Quote | EA Transport",
+    "contact_description": "Contact us for international freight transport from Albania. Request a free quote online or call us. Coverage in 30+ European countries with refrigerated and express options."
   },
   "nav": {
     "home": "Home",
@@ -31,7 +35,7 @@
   "services": {
     "badge": "Our Services",
     "title": "Comprehensive Logistics Solutions",
-    "subtitle": "From freight forwarding to express delivery, we provide end-to-end logistics solutions tailored to your business needs.",
+    "subtitle": "From international freight forwarding to temperature-controlled transport and express van delivery, we provide comprehensive end-to-end logistics solutions tailored to your business needs across 30+ European countries.",
     "services_count": "Services",
     "years_experience": "Years Experience",
     "coverage": "Coverage",
@@ -64,11 +68,11 @@
   "about": {
     "title": "About Us",
     "subtitle": "Our Story",
-    "description": "EA Transport is an international transport company based in Albania. With years of experience in the industry, we provide reliable and professional transport services.",
+    "description": "EA Transport is a leading international transport company headquartered in Albania, specializing in freight logistics across Europe. With over 8 years of experience and a modern fleet of 15+ vehicles, we deliver reliable, fully insured transport services to 30+ countries.",
     "story_title": "Building Trust Through Reliable Service",
-    "story_p1": "EA Transport was founded with a simple mission: to provide reliable, efficient, and professional transport services connecting Albania with Europe.",
-    "story_p2": "Over the years, we have grown from a small local operation to a trusted partner for businesses across the continent. Our success is built on a foundation of punctuality, safety, and customer satisfaction.",
-    "story_p3": "Today, we operate a modern fleet of vehicles and employ a team of experienced professionals dedicated to ensuring your goods reach their destination safely and on time.",
+    "story_p1": "EA Transport was founded with a clear mission: to bridge the gap between Albania and European markets through reliable, efficient, and professional freight transport services. From day one, we have prioritized building lasting relationships with our clients based on trust and transparency.",
+    "story_p2": "Over the years, we have grown from a small local operation to a trusted logistics partner for over 500 businesses across the continent. Our success is built on a solid foundation of punctuality, cargo safety, competitive pricing, and unwavering commitment to customer satisfaction. We handle everything from customs clearance to last-mile delivery.",
+    "story_p3": "Today, we operate a modern fleet of trucks, refrigerated vehicles, and express vans, staffed by a team of experienced logistics professionals. Every shipment is fully insured and tracked in real-time, giving our clients complete peace of mind from pickup to final delivery.",
     "insured_title": "100% Insured",
     "insured_subtitle": "All shipments covered",
     "values": {
@@ -125,7 +129,7 @@
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "We're here to help",
+    "subtitle": "Get in touch with our logistics team for a free, no-obligation quote. We respond within 24 hours and are available via phone, email, or WhatsApp.",
     "badge": "Get in Touch",
     "form_title": "Request a Quote",
     "form_subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
@@ -272,6 +276,44 @@
     "free_quote": "Free Quote",
     "support_24_7": "24/7 Support",
     "insured": "Insured Delivery"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated: February 2026",
+    "intro": "EA Transport is committed to protecting the privacy of our users and clients. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website or use our services.",
+    "collection_title": "Information We Collect",
+    "collection_text": "We may collect personal information that you voluntarily provide to us when you fill out our contact or quote request form, including your name, email address, phone number, company name, and shipment details. We also automatically collect certain technical information such as your IP address, browser type, and pages visited through cookies and similar technologies.",
+    "use_title": "How We Use Your Information",
+    "use_text": "We use the information we collect to respond to your inquiries and quote requests, provide our transport and logistics services, improve our website and user experience, send you service-related communications, and comply with legal obligations.",
+    "sharing_title": "Information Sharing",
+    "sharing_text": "We do not sell or rent your personal information to third parties. We may share your information with trusted service providers who assist us in operating our website and delivering our services, and when required by law or to protect our rights.",
+    "security_title": "Data Security",
+    "security_text": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+    "rights_title": "Your Rights",
+    "rights_text": "You have the right to access, correct, or delete your personal data. You may also object to or restrict certain processing of your data. To exercise these rights, please contact us using the information provided on our Contact page.",
+    "contact_title": "Contact Us",
+    "contact_text": "If you have any questions about this Privacy Policy, please contact us at info@transport-ea.com."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "last_updated": "Last updated: February 2026",
+    "intro": "Welcome to EA Transport. By accessing and using our website and services, you agree to be bound by these Terms of Service. Please read them carefully before using our services.",
+    "services_title": "Our Services",
+    "services_text": "EA Transport provides international freight transport, refrigerated transport, and express van delivery services between Albania and Europe. All services are subject to availability and our acceptance of your shipment request.",
+    "quotes_title": "Quotes and Pricing",
+    "quotes_text": "All quotes provided through our website or by our team are estimates and may be subject to change based on actual shipment details, dimensions, weight, and route conditions. Final pricing will be confirmed before shipment. Quotes are valid for 7 days unless otherwise stated.",
+    "liability_title": "Liability and Insurance",
+    "liability_text": "All shipments are covered by our standard cargo insurance. EA Transport's liability is limited to the terms of the applicable insurance policy. We are not liable for delays caused by force majeure events, customs procedures, or circumstances beyond our control.",
+    "obligations_title": "Client Obligations",
+    "obligations_text": "Clients are responsible for providing accurate shipment information, ensuring goods comply with all applicable laws and regulations, properly packaging goods for transport, and providing all necessary documentation for customs clearance.",
+    "prohibited_title": "Prohibited Items",
+    "prohibited_text": "We reserve the right to refuse transport of illegal goods, undeclared hazardous materials, items that violate import/export regulations, and any goods that could pose a risk to safety or the environment.",
+    "termination_title": "Termination",
+    "termination_text": "Either party may terminate the service agreement with written notice. EA Transport reserves the right to refuse service to any client who violates these terms.",
+    "law_title": "Governing Law",
+    "law_text": "These Terms of Service are governed by the laws of the Republic of Albania. Any disputes shall be resolved in the courts of Tirana, Albania.",
+    "contact_title": "Contact Us",
+    "contact_text": "If you have any questions about these Terms of Service, please contact us at info@transport-ea.com."
   },
   "common": {
     "loading": "Loading...",
