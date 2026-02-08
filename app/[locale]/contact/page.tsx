@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { Container } from '@/components/ui/container';
 import { Badge } from '@/components/ui/badge';
 import { QuoteForm } from '@/components/forms/quote-form';
-import { FaqAccordion } from '@/components/sections/faq-accordion';
 import { COMPANY_INFO } from '@/lib/constants';
 
 export async function generateMetadata({
@@ -152,11 +151,11 @@ export default async function ContactPage({
                 <ul className="space-y-4">
                   <li className="flex justify-between items-center">
                     <span className="text-gray-600">{t('monday_friday')}</span>
-                    <span className="font-semibold text-gray-900">08:00 - 18:00</span>
+                    <span className="font-semibold text-gray-900">08:00 - 17:00</span>
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="text-gray-600">{t('saturday')}</span>
-                    <span className="font-semibold text-gray-900">09:00 - 14:00</span>
+                    <span className="text-gray-400">{t('closed')}</span>
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="text-gray-600">{t('sunday')}</span>
@@ -169,8 +168,6 @@ export default async function ContactPage({
         </Container>
       </section>
 
-      {/* FAQ Section */}
-      <FaqAccordion showCta={false} />
-    </>
+</>
   );
 }

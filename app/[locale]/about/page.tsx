@@ -5,6 +5,36 @@ import { Badge } from '@/components/ui/badge';
 import { WhyChooseUs } from '@/components/sections/why-choose-us';
 import { CtaSection } from '@/components/sections/cta-section';
 
+const ABOUT_STATS = [
+  {
+    valueKey: 'years_value',
+    labelKey: 'years_label',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+  {
+    valueKey: 'fleet_value',
+    labelKey: 'fleet_label',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25m-2.25 0h-2.25m0 0V6.375c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v3.75m-7.5 0h7.5" />
+      </svg>
+    ),
+  },
+  {
+    valueKey: 'clients_value',
+    labelKey: 'clients_label',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+      </svg>
+    ),
+  },
+];
+
 export async function generateMetadata({
   params,
 }: {
@@ -28,20 +58,17 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'about' });
+  const tStats = await getTranslations({ locale, namespace: 'stats' });
 
   return (
     <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gray-900 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1470&auto=format&fit=crop"
-            alt="Transport fleet"
-            fill
-            className="object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-gray-900" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-gray-900/80" />
+
+        {/* Decorative blobs */}
+        <div className="absolute top-40 right-20 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-64 h-64 bg-primary-500/5 rounded-full blur-2xl" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl">
@@ -60,69 +87,58 @@ export default async function AboutPage({
         </Container>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section — same style as hero trust bar */}
       <section className="py-16 md:py-20 bg-white">
         <Container>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary-500 mb-2">15+</div>
-              <div className="text-gray-500">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary-500 mb-2">30+</div>
-              <div className="text-gray-500">Countries Covered</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary-500 mb-2">500+</div>
-              <div className="text-gray-500">Happy Clients</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary-500 mb-2">10K+</div>
-              <div className="text-gray-500">Deliveries/Year</div>
-            </div>
+          <div className="grid grid-cols-3 gap-6 md:gap-8">
+            {ABOUT_STATS.map((stat) => (
+              <div key={stat.valueKey} className="flex flex-col items-center text-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-primary-100 border border-primary-200 flex items-center justify-center text-primary-500">
+                  {stat.icon}
+                </div>
+                <div>
+                  <div className="text-3xl md:text-4xl font-bold text-gray-900 leading-none">
+                    {tStats(stat.valueKey)}
+                  </div>
+                  <div className="text-sm md:text-base text-gray-500 mt-1">
+                    {tStats(stat.labelKey)}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </Container>
       </section>
 
-      {/* Story Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      {/* Story Section — matches about-section on home */}
+      <section className="py-20 md:py-28 bg-gray-50">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Image column */}
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden">
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-sm">
                 <Image
-                  src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1470&auto=format&fit=crop"
-                  alt="Warehouse operations"
+                  src="/eatransport.webp"
+                  alt="EA Transport fleet"
                   fill
                   className="object-cover"
                 />
-              </div>
-              {/* Floating card */}
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-5 shadow-xl hidden md:block">
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-primary-500 rounded-xl flex items-center justify-center">
-                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900">{t('insured_title')}</div>
-                    <div className="text-sm text-gray-500">{t('insured_subtitle')}</div>
-                  </div>
-                </div>
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-transparent to-transparent" />
               </div>
             </div>
 
+            {/* Content column */}
             <div>
               <Badge variant="dark" icon="star" className="mb-6">
                 {t('subtitle')}
               </Badge>
 
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 {t('story_title')}
               </h2>
 
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-lg text-gray-500 leading-relaxed">
                 <p>{t('story_p1')}</p>
                 <p>{t('story_p2')}</p>
                 <p>{t('story_p3')}</p>

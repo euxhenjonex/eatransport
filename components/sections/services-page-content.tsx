@@ -9,23 +9,38 @@ import { Button } from '@/components/ui/button';
 import { CtaSection } from '@/components/sections/cta-section';
 import { AnimatedSection } from '@/components/animation/animated-section';
 import { AnimatedContainer } from '@/components/animation/animated-container';
-import { fadeUp, slideLeft, slideRight } from '@/lib/animations';
+import { fadeUp } from '@/lib/animations';
 
 const SERVICES = [
   {
     key: 'freight',
-    image: 'https://images.unsplash.com/photo-1619551734325-81aaf323686c?q=80&w=1469&auto=format&fit=crop',
+    image: '/trasportocamion.webp',
     featureKeys: ['freight.f1', 'freight.f2', 'freight.f3', 'freight.f4'],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25m-2.25 0h-2.25m0 0V6.375c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v3.75m-7.5 0h7.5" />
+      </svg>
+    ),
   },
   {
     key: 'frigo',
-    image: 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=1470&auto=format&fit=crop',
+    image: '/trasportorefrigerato.webp',
     featureKeys: ['frigo.f1', 'frigo.f2', 'frigo.f3', 'frigo.f4'],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 2v20m0-20l4 4m-4-4L8 6m4 14l4-4m-4 4l-4-4m-6-4h20m-20 0l4-4m-4 4l4 4m12-8l4 4m-4-4v0m4 4v0" />
+      </svg>
+    ),
   },
   {
     key: 'express',
-    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1470&auto=format&fit=crop',
+    image: '/trasportofurgone.webp',
     featureKeys: ['express.f1', 'express.f2', 'express.f3', 'express.f4'],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+      </svg>
+    ),
   },
 ] as const;
 
@@ -65,15 +80,11 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
     <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gray-900 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
-            alt="Logistics services"
-            fill
-            className="object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-gray-900" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-gray-900/80" />
+
+        {/* Decorative blobs */}
+        <div className="absolute top-40 right-20 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-64 h-64 bg-primary-500/5 rounded-full blur-2xl" />
 
         <Container className="relative z-10">
           <AnimatedSection animation="fade-up" className="max-w-3xl">
@@ -90,7 +101,7 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
             </p>
 
             <Link href="/contact">
-              <Button size="lg" className="group">
+              <Button size="lg" className="group border-2 border-transparent">
                 {translations.heroCta}
                 <svg
                   className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1"
@@ -106,33 +117,33 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
         </Container>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-20 md:py-28 bg-white">
+      {/* Services Detail Section */}
+      <section className="py-20 md:py-28 bg-gray-50">
         <Container>
-          <div className="space-y-20">
+          <div className="space-y-24 md:space-y-32">
             {SERVICES.map((service, index) => (
               <div
                 key={service.key}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-                }`}
+                className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center`}
               >
                 {/* Image */}
                 <AnimatedSection
                   animation={index % 2 === 0 ? 'slide-left' : 'slide-right'}
                   className={`relative ${index % 2 === 1 ? 'lg:order-2' : ''}`}
                 >
-                  <div className="aspect-[4/3] rounded-3xl overflow-hidden">
+                  <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-sm">
                     <Image
                       src={service.image}
                       alt={t(`${service.key}Title`)}
                       fill
                       className="object-cover"
                     />
+                    {/* Gradient overlay like about-section */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-transparent to-transparent" />
                   </div>
-                  {/* Service number */}
-                  <div className="absolute -top-3 -left-3 md:-top-4 md:-left-4 w-12 h-12 md:w-16 md:h-16 bg-primary-500 rounded-xl md:rounded-2xl flex items-center justify-center shadow-lg">
-                    <span className="text-2xl font-bold text-white">
+                  {/* Service number badge — matches how-it-works style */}
+                  <div className="absolute -top-3 -right-3 md:-top-4 md:-right-4 w-12 h-12 md:w-14 md:h-14 bg-gray-900 rounded-full flex items-center justify-center shadow-lg ring-4 ring-gray-900/10">
+                    <span className="text-lg md:text-xl font-bold text-white">
                       {String(index + 1).padStart(2, '0')}
                     </span>
                   </div>
@@ -143,36 +154,42 @@ export function ServicesPageContent({ translations }: ServicesPageContentProps) 
                   animation={index % 2 === 0 ? 'slide-right' : 'slide-left'}
                   className={index % 2 === 1 ? 'lg:order-1' : ''}
                 >
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  {/* Icon badge */}
+                  <div className="w-12 h-12 bg-primary-100 text-primary-500 rounded-2xl flex items-center justify-center mb-5">
+                    {service.icon}
+                  </div>
+
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
                     {t(`${service.key}Title`)}
                   </h2>
 
-                  <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  <p className="text-lg text-gray-500 mb-8 leading-relaxed">
                     {t(`${service.key}Description`)}
                   </p>
 
-                  <AnimatedContainer as="ul" className="space-y-4 mb-8" staggerDelay={0.1}>
+                  {/* Feature list — styled like about-section feature cards */}
+                  <AnimatedContainer as="ul" className="space-y-3 mb-10" staggerDelay={0.1}>
                     {service.featureKeys.map((featureKey) => (
                       <motion.li
                         key={featureKey}
                         variants={fadeUp}
-                        className="flex items-center gap-3"
+                        className="flex items-center gap-3 bg-white rounded-2xl px-5 py-4 border border-gray-100 shadow-sm"
                       >
-                        <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div className="w-8 h-8 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
                           <svg className="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <span className="text-gray-700">{translations.features[featureKey]}</span>
+                        <span className="text-gray-700 font-medium">{translations.features[featureKey]}</span>
                       </motion.li>
                     ))}
                   </AnimatedContainer>
 
                   <Link href="/contact">
-                    <Button variant="dark" className="group">
+                    <Button variant="dark" size="lg" className="group">
                       {translations.requestQuote}
                       <svg
-                        className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"
+                        className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

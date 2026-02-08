@@ -40,12 +40,12 @@ export function Testimonials() {
         </AnimatedSection>
 
         {/* Testimonials grid */}
-        <AnimatedContainer as="div" className="grid grid-cols-1 md:grid-cols-3 gap-6" staggerDelay={0.15} childVariants={slideUpVariants}>
+        <AnimatedContainer as="div" className="grid grid-cols-1 md:grid-cols-3 gap-6" staggerDelay={0.15} childVariants={slideUpVariants} childClassName="h-full">
           {REVIEWS.map((reviewKey) => (
             <motion.div
               key={reviewKey}
               variants={slideUpVariants}
-              className="relative bg-gray-50 rounded-3xl p-6 md:p-8 hover:shadow-md transition-shadow border-l-4 border-primary-500/30"
+              className="relative bg-gray-50 rounded-3xl p-6 md:p-8 hover:shadow-md transition-shadow border-l-4 border-primary-500/30 h-full flex flex-col"
             >
               {/* Decorative quote mark */}
               <div className="absolute top-5 right-7 text-5xl font-serif text-primary-200/60 leading-none select-none pointer-events-none">
@@ -60,7 +60,7 @@ export function Testimonials() {
               </div>
 
               {/* Quote text */}
-              <p className="text-gray-600 leading-relaxed mb-6 relative">
+              <p className="text-gray-600 leading-relaxed mb-6 relative flex-1">
                 {t(`reviews.${reviewKey}.text`)}
               </p>
 

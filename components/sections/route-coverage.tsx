@@ -94,7 +94,7 @@ export function RouteCoverage() {
               </div>
 
               {/* Destination grid */}
-              <AnimatedContainer as="div" className="grid grid-cols-2 sm:grid-cols-3 gap-3" staggerDelay={0.05}>
+              <AnimatedContainer as="div" className="grid grid-cols-3 gap-3" staggerDelay={0.05}>
                 {DESTINATIONS.map((dest) => (
                   <motion.div
                     key={dest.key}

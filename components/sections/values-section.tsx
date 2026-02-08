@@ -48,7 +48,7 @@ export function ValuesSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {VALUES.map((value) => (
+          {VALUES.map((value, index) => (
             <div
               key={value.key}
               className="group relative bg-white rounded-3xl p-8 hover:bg-gray-900 transition-all duration-300 overflow-hidden"
@@ -71,7 +71,7 @@ export function ValuesSection() {
 
               {/* Number indicator */}
               <div className="absolute bottom-6 right-6 text-6xl font-bold text-gray-100 group-hover:text-gray-800 transition-colors">
-                {String(VALUES.indexOf(value) + 1).padStart(2, '0')}
+                {String(index + 1).padStart(2, '0')}
               </div>
             </div>
           ))}

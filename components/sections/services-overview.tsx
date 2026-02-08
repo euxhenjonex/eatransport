@@ -64,13 +64,14 @@ export function ServicesOverview() {
           as="div"
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
           staggerDelay={0.15}
+          childClassName="h-full"
         >
           {SERVICES.map((service, index) => (
             <motion.div
               key={service.key}
               whileHover={{ y: -4 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="group relative bg-white rounded-3xl p-6 md:p-10 hover:bg-gray-900 transition-all duration-300 overflow-hidden cursor-default shadow-sm hover:shadow-xl border-2 border-transparent hover:border-primary-500/30"
+              className="group relative bg-white rounded-3xl p-6 md:p-10 hover:bg-gray-900 transition-all duration-300 overflow-hidden cursor-default shadow-sm hover:shadow-xl border-2 border-transparent hover:border-primary-500/30 h-full"
             >
               {/* Decorative gradient blob */}
               <div className="absolute top-0 right-0 w-40 h-40 bg-primary-500/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-primary-500/20 transition-colors" />
@@ -84,12 +85,12 @@ export function ServicesOverview() {
               <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-white transition-colors">
                 {t(`${service.key}.title`)}
               </h3>
-              <p className="text-gray-500 leading-relaxed group-hover:text-gray-400 transition-colors max-w-md">
+              <p className="text-gray-500 leading-relaxed group-hover:text-gray-400 transition-colors max-w-[85%]">
                 {t(`${service.key}.description`)}
               </p>
 
               {/* Number indicator */}
-              <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 text-5xl md:text-7xl font-bold text-gray-100/80 group-hover:text-gray-800 transition-all duration-300 leading-none group-hover:scale-110 origin-bottom-right">
+              <div className="absolute bottom-4 right-5 md:bottom-6 md:right-6 text-4xl md:text-5xl font-bold text-gray-200/50 group-hover:text-gray-700/50 transition-all duration-300 leading-none select-none pointer-events-none">
                 {String(index + 1).padStart(2, '0')}
               </div>
             </motion.div>

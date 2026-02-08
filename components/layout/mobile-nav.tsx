@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import Image from 'next/image';
@@ -75,8 +76,8 @@ export function MobileNav({ variant = 'default' }: MobileNavProps) {
         </svg>
       </button>
 
-      {/* Fullscreen Overlay */}
-      {isOpen && (
+      {/* Fullscreen Overlay — rendered via portal to escape header's backdrop-blur containing block */}
+      {isOpen && createPortal(
         <div className="fixed inset-0 z-50 bg-gray-900 animate-overlay-in">
           {/* Header */}
           <div className="flex items-center justify-between p-5">
@@ -175,7 +176,8 @@ export function MobileNav({ variant = 'default' }: MobileNavProps) {
               </a>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

@@ -41,7 +41,7 @@ export function Hero() {
   const tStats = useTranslations('stats');
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative h-screen h-dvh flex items-center overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0">
         <video

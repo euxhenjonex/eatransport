@@ -6,8 +6,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 const nextConfig: NextConfig = {
   images: {},
   experimental: {
-    // Optimize barrel imports for faster builds and smaller bundles
-    optimizePackageImports: ['next-intl', '@react-google-maps/api', 'clsx', 'zod'],
+    optimizePackageImports: ['next-intl', 'clsx', 'zod'],
   },
 };
 

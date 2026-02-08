@@ -26,7 +26,7 @@ export function Header() {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // Check initial scroll position
 
     return () => window.removeEventListener('scroll', handleScroll);

@@ -1,6 +1,6 @@
 'use client';
 
-import { useActionState, useEffect, useRef } from 'react';
+import { useActionState, useEffect, useRef, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { sendQuoteRequest, type ActionState } from '@/actions/send-quote';
 import { Input } from '@/components/ui/input';
@@ -9,6 +9,8 @@ import { Select } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/components/ui/toast';
+
+const CARGO_KEYS = ['general', 'palletized', 'fragile', 'refrigerated', 'hazardous', 'oversized'] as const;
 
 export function QuoteForm() {
   const t = useTranslations('contact');
@@ -35,14 +37,10 @@ export function QuoteForm() {
     }
   }, [state, addToast, t]);
 
-  const cargoOptions = [
-    { value: 'general', label: t('cargo_types.general') },
-    { value: 'palletized', label: t('cargo_types.palletized') },
-    { value: 'fragile', label: t('cargo_types.fragile') },
-    { value: 'refrigerated', label: t('cargo_types.refrigerated') },
-    { value: 'hazardous', label: t('cargo_types.hazardous') },
-    { value: 'oversized', label: t('cargo_types.oversized') },
-  ];
+  const cargoOptions = useMemo(
+    () => CARGO_KEYS.map((key) => ({ value: key, label: t(`cargo_types.${key}`) })),
+    [t]
+  );
 
   return (
     <Card>

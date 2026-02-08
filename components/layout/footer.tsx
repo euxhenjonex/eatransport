@@ -1,14 +1,12 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { Container } from '@/components/ui/container';
 import { NAV_LINKS, COMPANY_INFO, SOCIAL_LINKS } from '@/lib/constants';
 
-export function Footer() {
-  const t = useTranslations('footer');
-  const tNav = useTranslations('nav');
+export async function Footer() {
+  const t = await getTranslations('footer');
+  const tNav = await getTranslations('nav');
 
   return (
     <footer className="bg-gray-900">
@@ -24,7 +22,7 @@ export function Footer() {
                   alt="EA Transport"
                   width={180}
                   height={35}
-                  className="h-10 w-auto brightness-0 invert"
+                  className="h-8 w-auto brightness-0 invert"
                 />
               </div>
               <p className="text-gray-400 leading-relaxed mb-6">

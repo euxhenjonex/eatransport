@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
@@ -79,38 +79,34 @@ export function LanguageSwitcher({ variant = 'default' }: LanguageSwitcherProps)
   const router = useRouter();
   const pathname = usePathname();
 
-  // Close on click outside
+  // Close on click outside or Escape key
   useEffect(() => {
+    if (!isOpen) return;
+
     function handleClickOutside(event: MouseEvent) {
       if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     }
 
-    if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
-    }
-  }, [isOpen]);
-
-  // Close on Escape key
-  useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === 'Escape') {
         setIsOpen(false);
       }
     }
 
-    if (isOpen) {
-      document.addEventListener('keydown', handleKeyDown);
-      return () => document.removeEventListener('keydown', handleKeyDown);
-    }
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
   }, [isOpen]);
 
-  const handleLocaleChange = (newLocale: string) => {
+  const handleLocaleChange = useCallback((newLocale: string) => {
     setIsOpen(false);
     router.replace(pathname, { locale: newLocale });
-  };
+  }, [router, pathname]);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
@@ -139,7 +135,7 @@ export function LanguageSwitcher({ variant = 'default' }: LanguageSwitcherProps)
       </button>
 
       {/* Dropdown Menu */}
-      {isOpen && (
+      {isOpen ? (
         <div
           role="listbox"
           aria-activedescendant={locale}
@@ -170,15 +166,15 @@ export function LanguageSwitcher({ variant = 'default' }: LanguageSwitcherProps)
               )}
             >
               <span className="w-5 flex-shrink-0">
-                {locale === loc && (
+                {locale === loc ? (
                   <CheckIcon className={variant === 'transparent' ? 'text-primary-400' : 'text-primary-600'} />
-                )}
+                ) : null}
               </span>
               <span>{LOCALE_LABELS[loc]}</span>
             </button>
           ))}
         </div>
-      )}
+      ) : null}
     </div>
   );
 }

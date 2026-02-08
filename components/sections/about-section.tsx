@@ -119,11 +119,6 @@ export function AboutSection() {
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent" />
 
-              {/* Experience badge */}
-              <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-3 shadow-lg">
-                <div className="text-2xl font-bold text-gray-900 leading-none">8+</div>
-                <div className="text-xs text-gray-500 mt-1">{t('values.reliability.title')}</div>
-              </div>
             </div>
 
           </AnimatedSection>
