@@ -51,7 +51,7 @@ export async function sendQuoteRequest(
     }
 
     await resend.emails.send({
-      from: 'EA Transport <noreply@eatransport.al>',
+      from: 'EA Transport <noreply@transport-ea.com>',
       to: [COMPANY_INFO.email],
       replyTo: data.email,
       subject: `New Quote Request from ${data.name}`,
