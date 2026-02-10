@@ -145,6 +145,17 @@ export async function Footer() {
                 {t('terms_of_service')}
               </Link>
             </div>
+            <a
+              href="https://www.euxhenjonex.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-500 border border-gray-700 rounded-full px-4 py-1.5 hover:border-gray-500 hover:text-gray-300 transition-all"
+            >
+              Built with <span className="text-red-500">❤</span> by <span className="text-gray-300 font-medium">Euxhenio Nex</span>
+              <svg className="inline-block w-3.5 h-3.5 ml-1 -mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
         </Container>
       </div>
